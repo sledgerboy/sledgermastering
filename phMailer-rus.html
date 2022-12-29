@@ -1,0 +1,198 @@
+
+
+<!-- Mirrored from smmastering.by/phMailer-rus.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2019 07:15:52 GMT -->
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Оставить отзыв о работе SMMastering.by - Powered By phMailer</title>
+
+<style type="text/css">
+	body{
+		background-color:#1e1e1e;
+		font-family: Century Gothic, Arial, sans-serif;
+		font-size: 12pt;
+		color: #1e1e1e;
+	}
+	
+	.error_message{
+		font-family: Century Gothic, Arial, sans-serif;
+		font-size: 12pt;
+		color: #1e1e1e;
+	}
+	
+	.thanks_message{
+		font-family: Century Gothic, Arial, sans-serif;
+		font-size: 12pt;
+		color: #1e1e1e;
+	}
+	
+	a:link{
+		text-decoration:none;
+		color: #1e1e1e;
+	}
+	a:visited{
+		text-decoration:none;
+		color: #1e1e1e;
+	}
+	a:hover{
+		text-decoration:none;
+		color: #1e1e1e;
+	}
+	
+	.table {
+		border-collapse:collapse;
+		border:0;
+		width:920px;
+		background-color: transparent;
+	}
+	
+	.table_header{
+		border:1px solid #1e1e1e;
+		background-color: transparent;
+		font-family: Century Gothic, Arial, sans-serif;
+		font-size: 12pt;
+		font-weight:bold;
+		color: #a5ff00;
+		text-align:center;
+		padding:2px;
+	}
+	
+	.attach_info{
+		border:1px solid #1e1e1e;
+		background-color:#EBEBEB;
+		font-family: Century Gothic, Arial, sans-serif;
+		font-size: 10pt;
+		color: #1e1e1e;
+		padding:4px;
+	}
+	
+	
+	.table_body{
+		border:1px solid #1e1e1e;
+		background-color:#EBEBEB;
+		font-family: Century Gothic, Arial, sans-serif;
+		font-size: 10pt;
+		color: #1e1e1e;
+		padding:2px;
+	}
+	
+	.table_footer{
+		border:1px solid #070707;
+		background-color:#1e1e1e;
+		text-align:center;
+		padding:2px;
+	}
+	
+	input,select,textarea {
+		font-family: Century Gothic, Arial, sans-serif;
+		font-size: 10pt;
+		color: #1e1e1e;
+		background-color:#fff;
+		border:1px solid #1e1e1e;
+	}
+	
+	.copyright {
+		border:0px;
+		font-family: Century Gothic, Arial, sans-serif;
+		font-size: 10pt;
+		color: #1e1e1e;
+		text-align:right;
+	}
+	
+	form{
+		padding:0px;
+		margin:0px;
+	}
+</style>
+
+<script type="text/javascript">
+var error="";
+e_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/;
+
+function Checkit(theform) {
+	if(theform.yourname.value=="") {
+		error+="Вы не ввели имя\n";
+	}
+	
+	if(theform.youremail.value=="") {
+		error+="Вы не ввели email\n";
+	} else if(!e_regex.test(theform.youremail.value)) {
+		error+="Неверный email\n";
+	}
+		
+	if(theform.yourmessage.value=="") {
+		error+="Вы не ввели текст отзыва\n";
+	}
+	
+	if(error) {
+		alert('**The form returned the following errors:**\n\n' + error);
+		error="";
+		return false;
+	} else {
+		return true;
+	}
+}
+</script>
+
+</head>
+<body>
+
+
+<form method="post" action="http://smmastering.by/phMailer-rus.php" enctype="multipart/form-data" name="phmailer" onsubmit="return Checkit(this);">
+<table align="center" class="table">
+	<tr>
+		<td colspan="2" class="table_header" width="960px">Оставить отзыв о работе SMMastering.by</td>
+	</tr>
+			<tr>
+			<td width="960px" class="attach_info" colspan="2">
+				<b>Valid Attachment Types:</b> zip, rar, jpg, jpeg, png, gif, psd<br />
+				<b>Max size per file:</b> 4096kb.<br />
+				<b>Max combined file size:</b> 4096kb.
+			</td>
+		</tr>
+		
+	<tr>
+		<td width="30%" class="table_body">Ваше имя (или Artist ID):</td>
+		<td width="70%" class="table_body"><input name="yourname" type="text" size="30" value="" /><span class="error_message">*</span></td>
+	</tr>
+	<tr>
+		<td width="30%" class="table_body">Ваш Email:</td>
+		<td width="70%" class="table_body"><input name="youremail" type="text" size="30" value="" /><span class="error_message">*</span></td>
+	</tr>
+	<tr>
+		<td width="30%" class="table_body">Тема/Заголовок (например, "Всем доволен!"): </td>
+		<td width="70%" class="table_body">
+		
+							
+				<input name="emailsubject" type="text" size="30" value="" />
+				
+						
+		</td>
+	</tr>
+
+			<tr>
+			<td width="30%" class="table_body">Прикрепите Ваше фото:</td>
+			<td width="70%" class="table_body"><input name="attachment[]" type="file" size="30" /></td>
+		</tr>
+		
+	<tr>
+		<td colspan="2" width="960px" class="table_body">Текст отзыва:<span class="error_message">*</span><br />
+			<div align="center">
+				<textarea name="yourmessage" rows="8" cols="60"></textarea>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" width="960px" class="table_footer">
+			<input type="hidden" name="submit" value="true" />
+			<input type="submit" value=" Отправить " /> &nbsp;
+			<input type="reset" value=" Очистить " />
+		</td>
+	</tr>
+</table>
+</form>
+
+<table class="table" style="border:0;" align="center">
+	<tr>
+		<td><div class="copyright">&copy;<a href="http://www.phphq.net/?script=phMailer" target="_blank" title="Powered By phMailer 1.5.1 &lt;www.phphq.net&gt;">phMailer</a></div></td>
+	</tr>
+</table>

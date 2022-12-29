@@ -1,0 +1,145 @@
+@charset "utf-8";
+html, body, div, span, h1, h2, h3, h4, h5, h6, iframe, p, a, img, ul, li, fieldset, form, table, tbody, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; vertical-align: baseline;}
+html {height: 100%;}
+body {font-size: 14px; overflow-x: auto; overflow-y: scroll; height:100%;}
+textarea, input, select {font-family: calibri, sans-serif; box-sizing: border-box;}
+ol, ul {list-style: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+a {cursor: pointer; text-decoration: none;}
+@font-face {font-family: calibri, sans-serif; src: url(fonts/calibri.ttf);}
+body {width: 100%; height: 100%; background-image: url("img_sys/mixer.jpg"); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;}
+
+	/* base start */
+/* main template */
+#main {margin: 0; margin-top:-10px; width: 100%; height: 100%; max-width: 980px;}
+#wrapper {margin-top: 0; margin-bottom:0; padding:10px; max-width: 980px; background-color:#000; opacity:0.9;}
+#wrapper a			{text-decoration: underline; color: #fff;}
+#wrapper a:link		{text-decoration: underline; color:#fff;}
+#wrapper a:visited	{text-decoration: none; color:#fff;}
+#wrapper a:hover	{text-decoration: underline; color:#99cc00; background-color: transparent;}
+hr {height: 2px; border: 0; background-color: #99cc00; margin: 10px 860px 0 0;}
+#mini_ruler {height: 1px; max-width: 50%; border: 0; background-color: #99cc00; margin: 0.5em 0 0.5px 0;}
+
+/* fonts */
+h1 {display: block; font-family: calibri, sans-serif; font-size: 26px; margin-top:4%; margin-bottom:1%;  color: #99cc00; text-indent:20px; text-align: justify; text-transform: uppercase;}
+h2 {display: block; font-family: calibri, sans-serif; font-size: 24px; font-weight: bold; margin-top:0; margin-bottom:0; color:#fff; text-align: center;}
+h3 {display: block; font-family: calibri, sans-serif; font-size: 20px; margin-top:4%; margin-bottom:1%; color: #99cc00; text-indent:20px; text-align: center; text-transform: uppercase;}
+.font_1 {font-family: calibri, sans-serif; padding: 0 2% 2% 2%; font-size: 16px; font-weight: normal; color:#ccc; text-align: left;}
+.font_2 {font-family: calibri, sans-serif; font-size: 22px; font-weight: bold; color:#999;}
+.font_3 {font-family: calibri, sans-serif; font-size: 24px; font-weight: bold; color:#999;}
+.font_4 {font-family: calibri, sans-serif; padding-top: 1em; font-size: 16px; font-weight: bold; color:#1e1e1e; text-align: center; text-transform: uppercase;}
+.font_5 {font-family: calibri, sans-serif; font-size: 10px; font-weight: normal; display:block; color:#1e1e1e; text-align: center;}
+.font_6 {font-family: calibri, sans-serif; font-size: 14px; font-style: italic; margin-top: 5px; color:#999; text-align: justify; text-indent:3em;}
+.font_7 {font-family: calibri, sans-serif; margin-top: 5px; margin-left: 15px; font-size: 22px; font-weight: bold; color:#99cc00; text-align: left;}
+.font_8 {font-family: calibri, sans-serif; display: inline; margin-left: 15px; font-size: 16px; font-weight: normal; color:#fff; text-align: left;}
+.font_9 {font-family: calibri, sans-serif; display: inline; margin-left: 15px; font-size: 16px; font-weight: normal; color:#99cc00; text-align: left;}
+.font_10 {font-family: calibri, sans-serif; display: inline; font-weight: bold; font-size: 16px; color:#fff; text-align: center;}
+.font_11 {font-family: calibri, sans-serif; padding: 0 2% 0 2%; font-size: 18px; font-weight: bold; color:#99cc00; text-align: justify;}
+.font_12 {font-family: calibri, sans-serif; display: inline; margin-left: 10px; font-size: 18px; font-weight: bold; color:#99cc00; text-align: left;}
+.font_13 {font-family: calibri, sans-serif; padding: 0; margin-left: 10px;font-size: 12px; font-weight: normal; color:#99cc00; text-align: left;}
+
+/* menu */
+#menu {z-index:9999; position:fixed; width: 980px; padding:0.5em 0 0.5em 0; background-color:#fff; /*text-align:right;*/ opacity: 0.8; border-radius: 10px 10px 10px 10px;}
+#menustyle {display:inline; min-width:100%; font-family: calibri; font-size: 14px; font-weight: bolder; color:#99cc00; text-transform: uppercase;}
+#menu li {display: inline; border: 0; padding: 0 4px 0 4px;}
+#menustyle a			{text-decoration: none;}
+#menustyle a:link		{text-decoration: none; color:#1e1e1e; background-color: transparent;}
+#menustyle a:visited	{text-decoration: none; color:#1e1e1e; background-color: transparent;}
+#menustyle a:hover		{text-decoration: none; color:#99cc00; background-color: #1e1e1e;}
+
+/* head */
+#header {position:absolute; margin: 0; margin-top: -4px; width:980px; min-height:336px; background-image: url("img_sys/bg-head.png"); background-repeat: no-repeat;}
+#logo {margin: 0; padding: 0;}
+#logo a			{text-decoration: none;}
+#logo a:link	{text-decoration: none;}
+#logo a:visited	{text-decoration: none;}
+#logo:hover		{text-decoration: none; background-image: url("img_sys/trans_link.png");background-size: cover;}
+#logo img {margin: 100px auto; padding: 0; width:260px; border: 0;}
+#stripe {padding-top: 236px; padding-bottom: 96px; background-color: transparent;}
+
+	/* servbanner soc icons*/
+	#servbanner {position: absolute; padding-top:12%; padding-left:2%; max-width:20%; text-align:left;}
+	.serv_img {padding: 5px; width: 80%; border:0;}
+
+	/* socbanner icons */
+	#socbanner {position: absolute; padding-top:10%; padding-left:79%; max-width:20%; text-align:right;}
+	#socban {display: inline; padding: 1px; border: 0;}
+	#socban li {display: inline; padding: 1px; border: 0;}
+	#socban img {display: inline; padding: 0; border: 0; border-radius: 10px;}
+	#socban a {display: inline; text-decoration: none; background-color: transparent;}
+	.soc_img {padding: 5px; border:0; max-width: 20%; border-radius: 30px;}
+
+/* footer block */
+.bblock_4 {max-height: 360px;}
+#footer {margin: 0; background-image: url("img_sys/black.png"); background-size: cover; opacity: 0.9; border-radius: 0 0 10px 10px;}
+#footer a {margin: 0; text-decoration: none; background-color: transparent;}
+#footlogos {margin: 0; padding: 0;}
+#footlogos ul {margin: 0; padding: 0;}
+#footlogos li {display: inline; margin-right: 5px; padding: 10px; border: 0;}
+#footlogos img {display: inline; max-height: 60px; padding-top: 10px; border: 0;}
+#footlogos a {margin: 0; text-decoration: none; background-color: transparent;}
+	/* base end */
+
+			/* specific elements start */
+/* partners block */
+.bblock_1 {margin-top: 10px; max-height: 190px; border-radius: 30px;}
+.bblock_tr {padding: 10px; height: 100px;}
+#partners {padding-top: 36px; height: 190px;}
+#partners li {display: inline; margin-right: 5px; padding: 10px; border: 0;}
+#partners img {display: inline; max-height: 90px; padding: 1px; border: 0; background: rgba(0, 0, 0, 0.9); color: #000;}
+#parnters a {margin: 0; text-decoration: none; }
+
+/* freedemo block */
+.bblock_2 {width: 960px; height: 160px;}
+#try {width: 700px; height: 100px;}
+#try_l {margin-top: 8%; width: 50%; float: right;}
+#try_r {margin-top: 8%; width: 50%; float: left;}
+#try a {display: block; width: 244px; height: 60px; margin: 0; padding: 0; border: 0; background-image: url("img_sys/freetry.png"); background-repeat: no-repeat;}
+#try a:hover {background-image: url("img_sys/freetry_h.png"); background-repeat: no-repeat;}
+
+/* subscribe block */
+.bblock_3 {width: 960px; height: 160px;}
+#subs {width: 700px; height: 100px;}
+#subs_l {margin-top: 8%; width: 50%; float: right;}
+#subs_r {margin-top: 8%; width: 50%; float: left;}
+#subs a {display: block; width: 244px; height: 60px; margin: 0; padding: 0; border: 0; background-image: url("img_sys/subs.png"); background-repeat: no-repeat;}
+#subs a:hover {background-image: url("img_sys/subs_h.png"); background-repeat: no-repeat;}
+
+/* social block [at contacts] */
+.bblock_5 {max-height: 190px;}
+#soc {margin-top: 20px; padding: 0; text-align:left;}
+#soc ul {margin: 0; padding: 0;}
+#soc li {display: inline; margin-right: 5px; padding: 10px; border: 0;}
+#soc img {display: inline; max-height: 140px; padding: 0; border: 0;}
+#soc a:link {display: inline; font-family: calibri, sans-serif; max-height: 140px; padding-top: 10px; font-size: 16px; font-weight: bold; text-indent:2em; color:#333; text-decoration: none; background-color: transparent;}
+#soc a:hover {text-decoration: underline;}
+
+/* samples frames table [at examples]*/
+.bblock_6 {padding-top: 10px; min-height: 360px; text-align: left; background-image: url("img_sys/try.png"); background-size: cover; border-radius: 15px;}
+.hr_short {margin-top: 10px; margin-bottom: 10px; width: 260px; height: 2px; border: 0; background-color: #000;}
+.hr_shorter {margin-top: 10px; margin-bottom: 20px; width: 180px; height: 2px; border: 0; background-color: #000;}
+#max-play-before-left {margin-left: 3%; margin-top: 5px; margin-bottom: 20px; text-align: center; width: 45%; float:left;}
+#max-play-after-right {margin-right: 3%; margin-top: 5px; margin-bottom: 20px; text-align: center; width: 45%; float:right;}
+#max-play iframe {max-width: 460px !important;}
+
+/* feedback from */
+#fdb_form {max-width: 960px; background-image: url("img_sys/pars.png"); background-size: cover; border-radius: 30px;}
+
+/* ShowMore button */
+input {font-family: calibri, sans-serif; font-size: 16px; color: #99cc00; margin-top:10px; margin-bottom:10px; padding:0; min-width: 180px; min-height: 40px; background-color: transparent;}
+.input-button {padding:5px; background-image: url("img_sys/showmore.png"); background-size: cover;}
+
+/* mixshowslist [private links only] */
+
+.mixshowslist_table {max-width: 880px; min-width: 840px; margin-top: 10px; border: 0; vertical-align: top;}
+.mixshowslist_tr {margin: 0; padding: 0; width: 100%;}
+.mixshowslist_td_left {display: block; margin-right: 0.1em; width:50%; max-width: 420px; float: left; text-align: left; border: 0;}
+.mixshowslist_td_right {display: block; margin-left: 0.1em; width:49%; max-width: 420px; float: left; text-align: left; border: 0;}
+
+
+#mixshowslist a {display: block; text-decoration: underline; color: #fff; margin: 0;}
+#mixshowslist a:link {display: block; text-decoration: underline; color:#fff;}
+#mixshowslist a:visited	{display: block; text-decoration: none; color:#fff;}
+#mixshowslist a:hover {display: block; text-decoration: underline; color:#99cc00; background-color: transparent;}
+
+			/* specific elements end */
