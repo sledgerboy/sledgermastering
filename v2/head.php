@@ -23,7 +23,8 @@
 	================================================== -->
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/vendor.min.css">
-	<link rel="stylesheet" href="css/main.css?v=457">     
+	<link rel="stylesheet" href="css/main.css?v=45722">     
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 
 	<!-- script
 	================================================== -->
@@ -32,4 +33,6 @@
 	<!-- favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
+
+	<style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap'); </style>
 </head>
