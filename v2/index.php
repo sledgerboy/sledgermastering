@@ -280,7 +280,33 @@
 		</div> <!-- end row -->      
 	</section> <!-- end services two -->
 	
-	<!-- Services 3 Section
+
+
+	<!-- How to Section
+	================================================== -->
+	<section>
+		<div class="row section-head">
+      		<h1>How it works<span>.</span></h1>
+			<div class="row mobile-no-padding">       	
+		      	<div class="process bgrid-half tab-bgrid-whole group">
+		      		<div class="bgrid">
+						<h3>How to place order.</h3>	
+						<p>We have simplified the procedure for you as much as possible and describe the process as briefly as possible. You must read our prices, types of services and source files requirements, you must upload your track to any file-sharing service and send us the private link to download through the special page or to our main email. At the end of the work (the terms of the works are listed on the Services page), we are uploading mastered result in mp3 (or in the incomplete version in wav) to the file-sharing service and send the private link to your email specified in order form. If everything suits you - you will pay the check, then you will receive an electronic bill and the private link to download the full version of your track. In case you are completely unhappy with the final sound - we are ready to make 2 revisions of the track for free. Also, you can always cancel the paid order. In case of refuse - your funds are returned to you. The possibility of canceling the order is possible within 2 working days after you receive the private link to full version. However, the repayment period can reach 30 days and depends on your bank issuing your card.</p>
+					</div>
+
+					<div class="bgrid">
+						<h3>Payment.</h3>
+						<p>After works, we send you a private link to payment (or pdf-invoice with order descriptions and private link) according to our price list. You can pay by your plastic card: Visa, Visa Electron, MasterCard, Maestro. The operation of online payment is provided by bePaid and it is completely confidential and safe. Your personal data and card details will be entered not on our site, but on a special authorization page of the payment system. Access to it is carried out via the Secure Data Transfer Protocol (SSL), and Verified by Visa and MasterCard Secure code are used to authenticate the cardholder.</p>
+						<p>Important Notice: All prices are listed for reference and are automatically calculated for today (according to the exchange rates of the specified currencies on the official website of National Bank of the Republic of Belarus). All payments are made in BYN, and your funds are debited from your card in your local currency.</p>
+					</div> 
+				</div> <!-- end process -->      	
+			</div>
+		</div> <!-- end row -->
+	</section>
+	<!--============================================= -->
+
+
+		<!-- happy clients section
 	================================================== -->
 	<section>
 			<div class="row team section-head">
@@ -426,33 +452,8 @@
 				   </div>
 			   </div> <!-- end section-ads -->		         	         
 			</div> <!-- end call-to-action -->	           
-	</section> <!-- end services three -->  
+	</section> <!-- end happy clients section -->  
 	<!--============================================= -->
-
-	<!-- How to Section
-	================================================== -->
-	<section>
-		<div class="row section-head">
-      		<h1>How it works<span>.</span></h1>
-			<div class="row mobile-no-padding">       	
-		      	<div class="process bgrid-half tab-bgrid-whole group">
-		      		<div class="bgrid">
-						<h3>How to place order.</h3>	
-						<p>We have simplified the procedure for you as much as possible and describe the process as briefly as possible. You must read our prices, types of services and source files requirements, you must upload your track to any file-sharing service and send us the private link to download through the special page or to our main email. At the end of the work (the terms of the works are listed on the Services page), we are uploading mastered result in mp3 (or in the incomplete version in wav) to the file-sharing service and send the private link to your email specified in order form. If everything suits you - you will pay the check, then you will receive an electronic bill and the private link to download the full version of your track. In case you are completely unhappy with the final sound - we are ready to make 2 revisions of the track for free. Also, you can always cancel the paid order. In case of refuse - your funds are returned to you. The possibility of canceling the order is possible within 2 working days after you receive the private link to full version. However, the repayment period can reach 30 days and depends on your bank issuing your card.</p>
-					</div>
-
-					<div class="bgrid">
-						<h3>Payment.</h3>
-						<p>After works, we send you a private link to payment (or pdf-invoice with order descriptions and private link) according to our price list. You can pay by your plastic card: Visa, Visa Electron, MasterCard, Maestro. The operation of online payment is provided by bePaid and it is completely confidential and safe. Your personal data and card details will be entered not on our site, but on a special authorization page of the payment system. Access to it is carried out via the Secure Data Transfer Protocol (SSL), and Verified by Visa and MasterCard Secure code are used to authenticate the cardholder.</p>
-						<p>Important Notice: All prices are listed for reference and are automatically calculated for today (according to the exchange rates of the specified currencies on the official website of National Bank of the Republic of Belarus). All payments are made in BYN, and your funds are debited from your card in your local currency.</p>
-					</div> 
-				</div> <!-- end process -->      	
-			</div>
-		</div> <!-- end row -->
-	</section>
-	<!--============================================= -->
-
-
 
 
 
