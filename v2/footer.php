@@ -18,7 +18,7 @@
 
             <hr />
 
-            <div class="info">
+            <!--div class="info">
 
             	<div class="footer-logo"></div>
 
@@ -27,13 +27,17 @@
 	            nibh id elit. 
 	            </p>	        
 
-	         </div>
+	         </div-->
 
       	</div>           
 
+         <?php $today = date("Y");?>
+
+
          <ul class="copyright">
-         	<li>&copy; Copyright 2015 KREO.</li> 
-         	<li>Design by <a href="http://www.styleshout.com/">Styleshout.</a>.</li>
+         	<li>&copy; Copyright <?=$today?></li> 
+            <li><a title="Sledgermastering" href="/">Sledgermastering.by</a>.</li> 
+         	
          </ul>
 
          <div id="go-top">
@@ -59,3 +63,93 @@
    <script src="js/jquery.placeholder.min.js"></script>
    <script src="js/jquery.magnific-popup.min.js"></script>  
    <script src="js/main.js"></script>
+   <script src="js/pricer.js"></script>
+   <script>
+   /*---------------------------------------------------- */
+	/* Prices tabs
+	------------------------------------------------------ */ 
+		function openPrice(evt, priceName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(priceName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+   </script>
+   <script>
+   /*---------------------------------------------------- */
+	/* Prices Currencies tabs
+	------------------------------------------------------ */ 
+		function openPriceCur(evt, curDivName) {
+         
+			var i, tabcontent_cur, tablinks;
+			tabcontent_cur = document.getElementsByClassName("tabcontent_cur");
+			for (i = 0; i < tabcontent_cur.length; i++) {
+				tabcontent_cur[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(curDivName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+   </script>
+   
+   <script>
+      $('#for_labels > div.tab > a').click(function(){
+         $("#flb").addClass('active');
+      })
+   </script>
+
+   <script>
+      $('#flb').click(function(){
+         $("#for_labels > div.tab > a:nth-child(1)").addClass('active');
+      })
+   </script>
+
+   <script>
+   /*---------------------------------------------------- */
+	/* Prices Artists Currencies tabs
+	------------------------------------------------------ */ 
+		function openPriceArtCur(evt, curDivArtistsName) {
+         
+			var i, tabcontent_artcur, tablinks;
+			tabcontent_artcur = document.getElementsByClassName("tabcontent_artcur");
+			for (i = 0; i < tabcontent_artcur.length; i++) {
+				tabcontent_artcur[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(curDivArtistsName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+   </script>
+   
+   <script>
+   $('#for_artists > div.tab > a').click(function(){
+      $("#fab").addClass('active');
+   })
+   </script>
+
+   <script>
+      $("#fab").click(function(){
+         $("#for_artists > div.tab > a:nth-child(1)").addClass('active');
+      })
+   </script>
+
+
+
+
+
+
+
+

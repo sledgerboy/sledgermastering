@@ -51,7 +51,7 @@ body {
 a,
 a:visited {
 	outline: none;
-	color: white;
+	color: #b22222;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -73,7 +73,7 @@ h4,
 h5,
 h6 {
 	font-family: "Ubuntu", sans-serif;
-	color: #FFFFFF;
+	color: #b22222;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
 	margin: 18px 0 15px;
@@ -127,7 +127,7 @@ h6 {
 }
 
 p {
-	margin: 15px 0 15px 0;
+	margin: 16px auto;
 }
 
 p img {
@@ -135,24 +135,11 @@ p img {
 }
 
 p.lead {
-	font: 20px/36px "merriweather-light", serif;
 	color: #707273;
 }
 
 em {
-	font: 16px/30px "merriweather-italic", serif;
 	font-style: normal;
-}
-
-strong,
-b {
-	font: 16px/30px "merriweather-bold", serif;
-	font-weight: normal;
-}
-
-small {
-	font-size: 11px;
-	line-height: inherit;
 }
 
 blockquote {
@@ -199,7 +186,6 @@ blockquote cite a:visited {
 }
 
 abbr {
-	font-family: "merriweather-bold", serif;
 	font-variant: small-caps;
 	text-transform: lowercase;
 	letter-spacing: .5px;
@@ -312,7 +298,7 @@ img.pull-left {
 /* block grids default paddings 
 --------------------------------------------------------------------- */
 .bgrid {
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 @media only screen and (max-width:1024px) {
@@ -562,14 +548,18 @@ hr {
 
 section {
 	background: #efefef;
-    padding: 5rem 0 0;
+    padding: 4rem 0;
+	border-bottom: 1px solid #15191d;
+}
+section:nth-child(2n) {
+	background: #f4f4f4;
 }
 
 .section-head h1 {
-	font: 26px/16px "Ubuntu", sans-serif;
+	font: 26px/22px "Ubuntu", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
-	color: #FFFFFF;
+	color: #b22222;
 	margin-bottom: 30px;
 	margin-top: 18px;
 }
@@ -581,8 +571,8 @@ section {
 }
 
 .section-head p {
-	font: 20px/36px "merriweather-light", serif;
-	width: 95%;
+	width: 96%;
+	padding: 1rem;
 }
 
 .section-head:hover h1 + hr {
@@ -593,11 +583,10 @@ section {
 
 @media only screen and (max-width:768px) {
 	.section-head {
-		text-align: center;
+		text-align: justify;
 	}
 
 	.section-head p {
-		font: 18px/36px "merriweather-light", serif;
 		width: auto;
 	}
 
@@ -610,7 +599,6 @@ section {
 
 @media only screen and (max-width:600px) {
 	.section-head p {
-		font: 17px/33px "merriweather-light", serif;
 		width: auto;
 	}
 
@@ -644,7 +632,7 @@ header {
 	
 }
 header.opaque {
-	background: black;
+	background: #12151b;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -720,7 +708,7 @@ header .header-social li a:hover {
 	}
 
 	header .logo {
-		margin-left: -30px;
+		margin-left: 0;
 	}
 
 }
@@ -969,21 +957,22 @@ ul#nav li.current a:after {
 /* =================================================================== */
 
 #hero {
-	background: #0F1215 url(../images/3.jpg) no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	min-height: 630px;
-	width: 100%;
-	text-align: left;
-	position: relative;
-	border-bottom: 1px solid #15191d;
+    background: #0F1215 url(../images/pexels-13.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    min-height: 630px;
+    width: 100%;
+    text-align: left;
+    filter: contrast(0.8);
+    position: relative;
+    border-bottom: 1px solid #15191d;
 }
 
 .hero-content {
-	position: relative;
-	padding-top: 66px;
-	padding-bottom: 102px;
+    position: relative;
+    padding-top: 66px;
+    padding-bottom: 102px;
 }
 
 /* hero slider */
@@ -1027,7 +1016,6 @@ ul#nav li.current a:after {
 }
 
 #hero-slider .slides .flex-caption h3 {
-	font: 18px/1.9 "merriweather-light", sans-serif;
 	color: rgba(255, 255, 255, 0.7);
 	text-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
 	width: 85%;
@@ -1097,7 +1085,6 @@ ul#nav li.current a:after {
 	}
 
 	#hero-slider .slides .flex-caption h3 {
-		font: 16px/1.9 "merriweather-light", sans-serif;
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
@@ -1128,7 +1115,6 @@ ul#nav li.current a:after {
 	}
 
 	#hero-slider .slides .flex-caption h3 {
-		font: 16px/1.9 "merriweather-light", sans-serif;
 		width: 85%;
 	}
 
@@ -1153,7 +1139,6 @@ ul#nav li.current a:after {
 	}
 
 	#hero-slider .slides .flex-caption h3 {
-		font: 15px/1.9 "merriweather-light", sans-serif;
 		width: 90%;
 	}
 
@@ -1255,17 +1240,16 @@ ul#nav li.current a:after {
 	margin-left: 250px;
 }
 
-#hero #more a {
-	font: 12px/54px "Ubuntu", sans-serif;
+.styled_button {
+	flex: 1 1 auto;
+	font: 12px/46px "Ubuntu", sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	text-decoration: none;
-	display: block;
-	height: 54px;
+	height: 46px;
 	width: 200px;
-	border-radius: 3px;
-	background: #e64e04;
+	border-radius: 4px;
+	background: #000;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
 	color: #FFFFFF;
 	-moz-transition: all 0.4s ease-on-out;
@@ -1273,17 +1257,65 @@ ul#nav li.current a:after {
 	-webkit-transition: all 0.4s ease-on-out;
 	-ms-transition: all 0.4s ease-on-out;
 	transition: all 0.4s ease-on-out;
+	display: inline-block;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
 }
 
-#hero #more a:hover {
-	background: #b22222;
-	color: #000000;
+.styled_button:hover {
+	background: none repeat scroll 0 0 #b22222;
+    color: #FFF;
+    text-decoration: none;
+    border: 1px solid #b22222;
 }
 
-#hero #more a i {
+
+.styled_button:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.styled_button:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 2px #b22222;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(.8);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(.8);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    content: '';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.styled_button i {
 	margin-left: 6px;
 	position: relative;
 	right: -5px;
+}
+
+.m-0001rem {
+	margin: 0 0 0 1rem;
 }
 
 /* media queries - #more */
@@ -1440,11 +1472,11 @@ ul#nav li.current a:after {
 }
 
 .folio-item:hover .item-wrap img {
-	-moz-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9); 
 }
 
 /* media queries - .why-us-item-meta */
@@ -1510,24 +1542,17 @@ ul#nav li.current a:after {
 }
 
 .popup-modal .description-box h4 {
-	font: 15px/24px "Ubuntu", sans-serif;
 	color: #000000;
 }
 
-.popup-modal .description-box p {
-	font: 14px/24px "merriweather-regular", serif;
-	color: #A1A1A1;
-	margin-bottom: 12px;
+/* checklists */
+.popup-modal .checklists {
+    font: 16px/22px "Ubuntu", sans-serif;
+    color: rgba(0, 0, 0, 0.5);
 }
 
-/* categories */
-.popup-modal .categories {
-	font: 11px/18px "Ubuntu", sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	display: block;
-	text-align: left;
-	color: rgba(0, 0, 0, 0.5);
+.popup-modal .checklists ol li {
+	padding-top: 1rem;
 }
 
 /* link box */
@@ -1652,11 +1677,8 @@ ul#nav li.current a:after {
 /* 09. =services
 /* =================================================================== */
 
-#services {
-	background: #12151B;
-	padding-top: 120px;
-	padding-bottom: 120px;
-	border-bottom: 1px solid #15191d;
+#our-services-wrapper h2 {
+	text-align: center;
 }
 
 .service-list {
@@ -1778,6 +1800,176 @@ ul#nav li.current a:after {
 
 }
 
+/* prices
+-------------------------------------------------------------- */
+#prices .pricing-plan-price {
+	margin: 0 auto 20px;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	background: #595f6b;
+	-webkit-border-radius: 45px;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 45px;
+	-moz-background-clip: padding;
+	border-radius: 45px;
+	background-clip: padding-box;
+}
+
+#prices .pricevalue {
+	display: block;
+	text-align: center;
+}
+
+#prices h2,h4 {
+	text-align: center;
+}
+
+#prices ul.pricing-plan-features {
+    list-style: '-';
+}
+
+#prices ul.pricing-plan-artists {
+    list-style: '⚛';
+}
+
+#prices ul.pricing-plan-artists li {
+	display: flex;
+	text-align: end;
+}
+
+#prices ul.pricing-plan-artists li p {
+    flex: 1 1 auto;
+}
+
+#prices ul.pricing-plan-artists li p {
+    text-align: start;
+	margin: 0px auto;
+    padding: 10px;
+}
+
+#prices ul.pricing-plan-artists li p:first-child {
+    text-align: end;
+}
+
+#prices .ribbon-wrapper {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#prices .promote {
+	background: #ffe4c4;
+}
+
+#prices .active {
+	background: #b22222;
+}
+
+#prices .price-ribbon {
+    font: bold 15px Sans-Serif;
+    color: #333;
+    text-align: center;
+    text-shadow: rgb(255 255 255 / 50%) 0px 1px 0px;
+    position: relative;
+    padding: 4px 0;
+    left: 10px;
+    top: 14px;
+    width: 98px;
+    background-color: #b22222;
+    color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-box-shadow: 0px 0px 3px rgb(0 0 0 / 30%);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 16px rgb(166 0 0 / 92%);
+}
+
+/* Style the tab */
+#prices .tab {
+    padding: 1rem 0;
+    display: flex;
+}
+
+/* Style the buttons inside the tab */
+#prices .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#prices .tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+#prices .tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+#prices .tabcontent:not(.igno) {
+    display: none;
+}
+
+#prices .tabcontent_cur:not(.igno) {
+	display: none;
+}
+
+#prices .tabcontent_artcur:not(.igno) {
+	display: none;
+}
+
+	
+/* examples
+-------------------------------------------------------------- */
+.examplesblock {
+    margin: 20px 0;
+    padding: 2rem 0;
+    text-align: left;
+    border-bottom: 1px solid #575859;
+}
+
+.examplesblock:last-child {
+    border-bottom: 0;
+}
+
+.examplesblock h3, h4 {
+	text-align: start;
+	margin: 0;
+}
+
+.examplesblock p {
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.examplesblock .ex_players {
+	display: flex;
+}
+
+.examplesblock .ex_players .max-play {
+	position: relative;
+    display: block;
+    flex: 1 1 auto;
+}
+
+
 /* team members
 -------------------------------------------------------------- */
 #about .team {
@@ -1823,7 +2015,8 @@ ul#nav li.current a:after {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(253, 197, 1, 0.5);
+	background: rgba(56, 44, 0, 0.5);
+	/*#0f121557*/
 	filter: alpha(opacity=0);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	opacity: 0;
@@ -1857,7 +2050,7 @@ ul#nav li.current a:after {
 }
 
 #team-wrapper .member-social li a {
-	color: #FFFFFF;
+	color: #575859;
 }
 
 /* media queries:  
@@ -1900,8 +2093,13 @@ ul#nav li.current a:after {
 	#team-wrapper .member p {
 		font-size: 16px;
 		line-height: 30px;
+		min-height: 2rem;
 	}
 
+}
+
+.member p {
+	min-height: 6rem;
 }
 
 /* Call To Action 
@@ -1920,7 +2118,6 @@ ul#nav li.current a:after {
 }
 
 #call-to-action p {
-	font: 20px/36px "merriweather-light", serif;
 	color: #707273;
 	width: 75%;
 }
@@ -2010,6 +2207,11 @@ ul#nav li.current a:after {
 
 }
 
+.fa {
+	max-width: 20px;
+	height: auto;
+	vertical-align: middle;
+}
 
 /** 
 /* 11. =testimonials
@@ -2017,8 +2219,7 @@ ul#nav li.current a:after {
 
 #testimonials {
 	background: #ffffff47;
-	padding-top: 90px;
-	padding-bottom: 112px;
+	padding: 60px 0 140px 0;
 	position: relative;
 	min-height: 198px;
 	width: 100%;
@@ -2039,10 +2240,14 @@ ul#nav li.current a:after {
 }
 
 #testimonial-slider p {
-	font: 27px/1.9 "merriweather-regular", sans-serif;
 	color: #FFFFFF;
 	padding: 0;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#testimonial-slider ul li {
+	display: flex!important;
+    flex-direction: column-reverse;
 }
 
 #testimonial-slider .testimonial-author {
@@ -2122,9 +2327,7 @@ ul#nav li.current a:after {
 		max-width: 700px;
 	}
 
-	#testimonial-slider p {
-		font: 25px/1.9 "merriweather-regular", sans-serif;
-	}
+
 
 }
 
@@ -2133,9 +2336,7 @@ ul#nav li.current a:after {
 		width: 90%;
 	}
 
-	#testimonial-slider p {
-		font: 22px/1.9 "merriweather-regular", sans-serif;
-	}
+
 
 }
 
@@ -2144,9 +2345,6 @@ ul#nav li.current a:after {
 		width: 95%;
 	}
 
-	#testimonial-slider p {
-		font: 20px/1.9 "merriweather-regular", sans-serif;
-	}
 
 	#testimonial-slider .testimonial-author {
 		font: 14px/24px "Ubuntu" sans-serif;
@@ -2169,9 +2367,7 @@ ul#nav li.current a:after {
 		width: auto;
 	}
 
-	#testimonial-slider p {
-		font: 18px/1.9 "merriweather-regular", sans-serif;
-	}
+
 
 }
 
@@ -2181,8 +2377,8 @@ ul#nav li.current a:after {
 
 #contact {
 	background: #12151B;
-	padding-top: 120px;
-	padding-bottom: 138px;
+	padding-top: 60px;
+	padding-bottom: 140px;
 	overflow: hidden;
 	border-bottom: 1px solid #15191d;  
 }
@@ -2225,9 +2421,6 @@ ul#nav li.current a:after {
 		padding: 0 15px;
 	}
 
-	#contact .right p.lead {
-		font: 18px/36px "merriweather-light", serif;
-	}
 
 }
 
@@ -2237,9 +2430,6 @@ ul#nav li.current a:after {
 		padding: 0 10px;
 	}
 
-	#contact .right p.lead {
-		font: 17px/33px "merriweather-light", serif;
-	}
 
 }
 

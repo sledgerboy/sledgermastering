@@ -35,9 +35,9 @@
 	      animation: 'fade',
 	      controlNav: true,
 	      directionNav: false,
-	      smoothHeight: true,
-	      slideshowSpeed: 7000,
-	      animationSpeed: 600,
+	      smoothHeight: false,
+	      slideshowSpeed: 8000,
+	      animationSpeed: 450,
 	      randomize: false,
 	      before: function(slider){
 			   $(slider).find(".animated").each(function(){

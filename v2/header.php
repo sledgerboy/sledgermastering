@@ -22,8 +22,9 @@
 					<li><a class="smoothscroll" href="#hero">Home.</a></li>
 					<li class="current"><a class="smoothscroll" href="#services">Services.</a></li>
 					<li><a class="smoothscroll" href="#prices">Prices.</a></li>
-					<li><a class="smoothscroll" href="#examples">Examples.</a></li>
+					<li><a class="smoothscroll" href="#examples">Samples.</a></li>
 					<li><a class="smoothscroll" href="#terms">Terms.</a></li>
+					<li><a class="smoothscroll" href="#clients">Clients.</a></li>
 					<li><a class="smoothscroll" href="#contact">Contacts.</a></li>
 				</ul> <!-- end #nav -->
 			</nav> <!-- end #nav-wrap -->
