@@ -27,6 +27,29 @@
 
 @import url("font-awesome/css/font-awesome.min.css");
 
+.parallax_one {
+    /* The image used */
+    background-image: url("/img_sys/mixer.jpg");
+
+    /* Set a specific height */
+    height: 760px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax_two {
+    background-image: url("/img_sys/mixer2.jpg");
+    height: 880px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /** 
 /* 02. =document setup
@@ -555,9 +578,10 @@ section {
     padding: 4rem 0;
 	border-bottom: 1px solid #15191d;
 }
-section:nth-child(2n) {
+
+/*section:nth-child(2n) {
 	background: #f4f4f4;
-}
+}*/
 
 .section-head h1 {
 	font: 26px/22px "Ubuntu", sans-serif;
@@ -1793,8 +1817,20 @@ ul#nav li.current a:after {
 	border-radius: 5px;
 }
 
+.bg-black {
+	background: #090909;
+}
+
+.h460 {
+	height: 460px;
+}
+
 .process .bgrid:hover {
 	background: rgba(0, 0, 0, 0.1);
+}
+
+.p-shade {
+	text-shadow: 1px 2px black;
 }
 
 @media only screen and (max-width:600px) {
@@ -2659,11 +2695,15 @@ footer hr {
 }
 
 footer .info {
-	width: 90%;
-	max-width: 600px;
-	margin: 42px auto 36px;
-	text-align: center;
-	clear: both;
+    width: 660px;
+    max-width: 100%;
+    margin: 12px auto;
+    text-align: center;
+    clear: both;
+}
+
+footer .info img {
+	filter: grayscale(1);
 }
 
 footer .footer-logo {

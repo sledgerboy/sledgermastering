@@ -22,16 +22,19 @@
                <a class="smoothscroll styled_button" title="Back to Top" href="#hero">Back to Top<i class="fa fa-angle-up"></i></a>
             </div>
 
-            <!--div class="info">
 
-            	<div class="footer-logo"></div>
+            <div class="info">
+               <img src="/images/paylogos.png" style="width: 600px;">
+               <!--img src="/images/footer/yandex-pay-logo-footer.png" style="width: 15px;">
+               <img src="/images/footer/pci-dss.svg" style="width: 36px;">
+               <img src="/images/footer/mc-id.svg" style="width: 65px;">
+               <img src="/images/footer/visa-secure.svg" style="width: 22px;">
+               <img src="/images/footer/apple-pay.svg" style="width: 32px;">
+               <img src="/images/footer/google-pay.svg" style="width: 32px;">
+               <img src="/images/footer/samsung-pay.svg" style="width: 65px;">
+               <img src="/images/footer/mir-grey.svg" style="width: 25px;"-->
+            </div>      
 
-	            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-	            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-	            nibh id elit. 
-	            </p>	        
-
-	         </div-->
 
       	</div>           
 

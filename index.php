@@ -65,7 +65,7 @@ echo --$i;*/
 
 	<!-- Who Are We Section
 	================================================== -->
-	<section>
+	<section id="whoweare">
 		<div class="row section-head">
 			<div class="twelve columns">
 				<h1>Who Are We<span>.</span></h1>
@@ -82,7 +82,7 @@ echo --$i;*/
 
 	<!-- why-us
 	================================================== -->
-	<section>
+	<section id="whyus">
 		<div class="row section-head">
 			<div class="twelve columns">
 	      		<h1>Why us<span>?</span></h1>
@@ -110,13 +110,13 @@ echo --$i;*/
 
 	<!-- services
 	================================================== -->
-	<section id="services">
+	<section id="services" class="parallax_two">
 		<div class="row section-head">
 	      	<div class="twelve columns">
 	      		<h1>Our Services<span>.</span></h1>
 		        <hr />   
 
-		         <p>Click on service block below to open checklist (file requirements) for source files.</p>
+		         <p class="p-shade">Click on service block below to open checklist (file requirements) for source files.</p>
 				 <!-- checklist-wrapper -->
 				 <div id="our-services-wrapper" class="bgrid-third s-bgrid-third tab-bgrid-whole group">
 					<div class="bgrid folio-item">
@@ -789,14 +789,14 @@ echo --$i;*/
 
 	<!-- Terms Section
 	================================================== -->
-	<section id="terms">
+	<section id="terms" class="parallax_one">
 		<div class="row section-head">
       		<h1>Terms / How to<span>...</span></h1>
 			<hr />
 
 			<div class="row mobile-no-padding">       	
 		      	<div class="process bgrid-half tab-bgrid-whole group">
-		      		<div class="bgrid">
+		      		<div class="bgrid bg-black h460">
 						<h3>How to place order.</h3>
 						<ol>
 							<li>Choose you tariff</li>
@@ -813,7 +813,7 @@ echo --$i;*/
 						</blockquote>
 					</div>
 
-					<div class="bgrid">
+					<div class="bgrid bg-black h460">
 						<h3>Payment.</h3>
 						<p>After works, we send you the pdf-invoice with unique private link to "bePaid" special authorization page.
 						The payment is completely confidential and safe: service is protected via the Secure Data Transfer Protocol (SSL),
@@ -826,7 +826,7 @@ echo --$i;*/
 				</div> <!-- end process -->  
 				
 				<div class="process group">
-					<p>Full text of terms and public offer you can download <a href="/pub-offer.pdf">here</a>.</p> 
+					<p class="p-shade">Full text of terms and public offer you can download <a href="/pub-offer.pdf">here</a>.</p> 
 				</div>
 				
 			</div>
@@ -860,9 +860,9 @@ echo --$i;*/
 						<ul class="member-social">
 						  <li><a target="_blank" rel="noindex nofollow" href="https://www.facebook.com/DreizehnSchallplatten/"><i class="fa fa-facebook"></i></a></li>
 						  <li><a target="_blank" rel="noindex nofollow" href="https://soundcloud.com/dreizehn_schallplatten"><i class="fa fa-soundcloud"></i></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://www.beatport.com/label/dreizehn-schallplatten/59568"><img class="fa" src="/v2/images/btprt.png"></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://ra.co/labels/14647"><img class="fa" src="/v2/images/ra.png"></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/label/1173641-Dreizehn-Schallplatten"><img class="fa" src="/v2/images/ds.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://www.beatport.com/label/dreizehn-schallplatten/59568"><img class="fa" src="/images/btprt.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://ra.co/labels/14647"><img class="fa" src="/images/ra.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/label/1173641-Dreizehn-Schallplatten"><img class="fa" src="/images/ds.png"></a></li>
 					   </ul>
 					</div><!-- end member -->
 
@@ -878,9 +878,9 @@ echo --$i;*/
 					   <ul class="member-social">
 						  <li><a target="_blank" rel="noindex nofollow" href="https://www.facebook.com/BetriebRecords/"><i class="fa fa-facebook"></i></a></li>
 						  <li><a target="_blank" rel="noindex nofollow" href="https://soundcloud.com/betriebrecords"><i class="fa fa-soundcloud"></i></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://www.beatport.com/label/betrieb-records/50936"><img class="fa" src="/v2/images/btprt.png"></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://ra.co/labels/14648"><img class="fa" src="/v2/images/ra.png"></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/label/927883-Betrieb-Records"><img class="fa" src="/v2/images/ds.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://www.beatport.com/label/betrieb-records/50936"><img class="fa" src="/images/btprt.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://ra.co/labels/14648"><img class="fa" src="/images/ra.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/label/927883-Betrieb-Records"><img class="fa" src="/images/ds.png"></a></li>
 					   </ul>
 					</div> <!-- end member -->
 
@@ -898,9 +898,9 @@ echo --$i;*/
 					      <li><a target="_blank" rel="noindex nofollow" href="https://www.evosonic.de/evosonic-records/"><i class="fa fa-globe"></i></a></li>
 					   	  <li><a target="_blank" rel="noindex nofollow" href="https://facebook.com/evosonicrecords.official/"><i class="fa fa-facebook"></i></a></li>
 						  <li><a target="_blank" rel="noindex nofollow" href="https://soundcloud.com/evosonicschmidt"><i class="fa fa-soundcloud"></i></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://www.beatport.com/label/evosonic-records/57453"><img class="fa" src="/v2/images/btprt.png"></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://ra.co/labels/12718"><img class="fa" src="/v2/images/ra.png"></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/label/1042430-Evosonic-Records"><img class="fa" src="/v2/images/ds.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://www.beatport.com/label/evosonic-records/57453"><img class="fa" src="/images/btprt.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://ra.co/labels/12718"><img class="fa" src="/images/ra.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/label/1042430-Evosonic-Records"><img class="fa" src="/images/ds.png"></a></li>
 					   </ul>
 					</div> <!-- end member -->
 
@@ -917,9 +917,9 @@ echo --$i;*/
 					      <li><a target="_blank" rel="noindex nofollow" href="http://www.louder-than-famous.com/"><i class="fa fa-globe"></i></a></li>
 					   	  <li><a target="_blank" rel="noindex nofollow" href="https://www.facebook.com/louderthanfamous/"><i class="fa fa-facebook"></i></a></li>
 						  <li><a target="_blank" rel="noindex nofollow" href="https://soundcloud.com/louderthanfamous"><i class="fa fa-soundcloud"></i></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://www.beatport.com/label/louder-than-famous/62883"><img class="fa" src="/v2/images/btprt.png"></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://ra.co/labels/16697"><img class="fa" src="/v2/images/ra.png"></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/ru/label/2294638-Louder-Than-Famous"><img class="fa" src="/v2/images/ds.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://www.beatport.com/label/louder-than-famous/62883"><img class="fa" src="/images/btprt.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://ra.co/labels/16697"><img class="fa" src="/images/ra.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/ru/label/2294638-Louder-Than-Famous"><img class="fa" src="/images/ds.png"></a></li>
 					   </ul>
 					</div> <!-- end member -->
 
@@ -935,9 +935,9 @@ echo --$i;*/
 						<ul class="member-social">
 					   	  <li><a target="_blank" rel="noindex nofollow" href="https://www.facebook.com/waitaudio/"><i class="fa fa-facebook"></i></a></li>
 						  <li><a target="_blank" rel="noindex nofollow" href="https://soundcloud.com/waitaudio"><i class="fa fa-soundcloud"></i></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://www.beatport.com/label/waitaudio/50553"><img class="fa" src="/v2/images/btprt.png"></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://ra.co/labels/15126"><img class="fa" src="/v2/images/ra.png"></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/label/1059416-WaitAudio"><img class="fa" src="/v2/images/ds.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://www.beatport.com/label/waitaudio/50553"><img class="fa" src="/images/btprt.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://ra.co/labels/15126"><img class="fa" src="/images/ra.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/label/1059416-WaitAudio"><img class="fa" src="/images/ds.png"></a></li>
 					   </ul>
 					</div> <!-- end member -->
 
@@ -958,7 +958,7 @@ echo --$i;*/
 					      <li><a target="_blank" rel="noindex nofollow" href="https://assorted-music.com/de/"><i class="fa fa-globe"></i></a></li>
 					   	  <li><a target="_blank" rel="noindex nofollow" href="https://www.facebook.com/waitaudio/"><i class="fa fa-facebook"></i></a></li>
 						  <li><a target="_blank" rel="noindex nofollow" href="https://soundcloud.com/assortedmusicrecords"><i class="fa fa-soundcloud"></i></a></li>
-						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/label/1645128-Assorted-Music-Records"><img class="fa" src="/v2/images/ds.png"></a></li>
+						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/label/1645128-Assorted-Music-Records"><img class="fa" src="/images/ds.png"></a></li>
 					   </ul>
 					</div> <!-- end member -->
 				</div> <!-- end team-wrapper -->
@@ -1082,10 +1082,7 @@ echo --$i;*/
 					</div>                       
 					<div>
 							<textarea name="contactMessage"  id="contactMessage" placeholder="message" rows="10" cols="50" ></textarea>
-					</div>
-					<div>      
-							<input name="contactFile" type="file" size="30" />                
-					</div>   
+					</div> 
 					<div>
 						<button class="submitform">Submit</button>
 						<div id="submit-loader">
