@@ -28,13 +28,8 @@
 @import url("font-awesome/css/font-awesome.min.css");
 
 .parallax_one {
-    /* The image used */
     background-image: url("/img_sys/mixer.jpg");
-
-    /* Set a specific height */
-    height: 760px;
-
-    /* Create the parallax scrolling effect */
+    /*height: 760px;*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,8 +38,7 @@
 
 .parallax_two {
     background-image: url("/img_sys/mixer2.jpg");
-    height: 880px;
-    /* Create the parallax scrolling effect */
+    /*height: 880px;*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1819,10 +1813,6 @@ ul#nav li.current a:after {
 
 .bg-black {
 	background: #090909;
-}
-
-.h460 {
-	height: 460px;
 }
 
 .process .bgrid:hover {
