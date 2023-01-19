@@ -228,10 +228,6 @@
 
             <hr />
 
-            <div id="go-top" class="styled_button">
-               <a class="smoothscroll styled_button" title="Back to Top" href="#hero">Back to Top<i class="fa fa-angle-up"></i></a>
-            </div>
-
             <div class="info">
                <img src="/images/paylogos.png" style="width: 600px;">
             </div>  
