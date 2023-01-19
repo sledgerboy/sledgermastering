@@ -8,7 +8,7 @@
 
 		<div class="row">
 			<div class="logo">
-				<a href="#">Sledger_Mastering</a>
+				<a href="/">Sledger Mastering</a>
 			</div>
 
 			<nav id="nav-wrap">         
@@ -19,8 +19,8 @@
 					<span class="menu-icon">Menu</span>
 				</a>            
 				<ul id="nav" class="nav">
-					<li><a class="smoothscroll" href="#hero">Home.</a></li>
-					<li class="current"><a class="smoothscroll" href="#services">Services.</a></li>
+					<li class="current"><a class="smoothscroll" href="#hero">Home.</a></li>
+					<li><a class="smoothscroll" href="#services">Services.</a></li>
 					<li><a class="smoothscroll" href="#prices">Prices.</a></li>
 					<li><a class="smoothscroll" href="#examples">Samples.</a></li>
 					<li><a class="smoothscroll" href="#terms">Terms.</a></li>

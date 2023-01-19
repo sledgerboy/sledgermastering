@@ -1,0 +1,16 @@
+{
+    "host": "vh124.hoster.by",
+    "username": "sledgerm",
+    "password": "pai2Piec",
+    "remotePath": "public_html",
+    "protocol": "sftp",
+    "port": 22,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": true,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

@@ -1,110 +1,267 @@
+<?php
+?>
 <!DOCTYPE html>
-<html>
-
-<!-- Mirrored from smmastering.by/prices-eur by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2019 07:15:52 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<title>Successful</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta http-equiv="Cache-Control" content="no-cache">
-<meta name="viewport" content="width=980, user-scalable=yes">
-<meta name="description" content="Mastering service for the people, who thinking about music and sound quality as a one whole thing. We have a free demo and special offers for labels">
-<meta name="robots" content="noindex">
-<link rel="shortcut icon" href="favicon.gif" type="image/x-icon">
-<link rel="apple-touch-icon" href="favicon.gif" type="image/x-icon">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="sliders.css">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PJ3P84J');</script>
-<!-- End Google Tag Manager -->
+	<meta charset="utf-8">
+	<title>Sledger Mastering - Mastering service for labels and distributors</title>
+	<meta name="description" content="Online mastering service for labels, distributors and artists. Flexible price systems. Discounts and free demo!">  
+	<meta name="author" content="sledger">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="12600">
+
+	<!-- mobile specific metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/main.css?v=<?=time();?>">     
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<!-- script
+	================================================== -->
+	<script src="js/modernizr.js"></script>
+
+	<!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+	<style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap'); </style>
 </head>
+
 <body>
+<!-- header
+	================================================== -->
+	<header id="main-header">
+		<div class="row">
+			<div class="logo">
+				<a href="/">Sledger Mastering</a>
+			</div>
 
-<div align="center">
-<div id="main" width="980px" align="center">
-<div id="menu">
-    <ul id="menustyle"><ul><li class="first"><a href="index.html" title="Home" >Home</a></li>
-<li><a href="services.html" title="Services" >services</a></li>
-<li class="active"><a href="prices-eur.html" title="Prices (EUR)" >prices</a></li>
-<li><a href="examples.html" title="Examples" >examples</a></li>
-<li><a href="freedemo.html" title="Free Demo" >freedemo</a></li>
-<li><a href="forlabels-eur.html" title="For Labels (EUR)" >for labels</a></li>
-<li><a href="terms.html" title="Terms (public offer)" >terms</a></li>
-<li><a href="contacts.html" title="Contacts" >Contacts</a></li>
-<li class="last"><a href="feedback.html" title="Feedback" >feedback</a></li>
-</ul></ul>
-</div>
-<hr>
-<div id="header">
-      <div id="servbanner">
-  <ul id="socban">
-    <li><a target="_blank" href="https://soundbetter.com/profiles/36407-sledger-music-mastering" title="SMMastering on SoundBetter"><img class="serv_img" src="img_sys/sb.png" /></a></li>
-  </ul>
-  </div>
-  <div id="socbanner">
-  <ul id="socban">
-    <li><a target="_blank" href="https://www.facebook.com/smmastering" title="Facebook"><img class="soc_img" src="img_sys/soc/fb-ico.png"/></a></li>
-    <li><a target="_blank" href="https://www.soundcloud.com/smmastering" title="Soundcloud"><img class="soc_img" src="img_sys/soc/sc-ico.png"/></a></li>
-    	<li><a target="_blank" href="https://www.youtube.com/channel/UCEo97zjeJ2TdfjiBhbpqJxg" title="YouTube channel"><img class="soc_img" src="img_sys/soc/yt-ico.png"/></a></li>
-  </ul>
-</div>
-    <div id="logo"><a href="index.html"><img src="img_sys/logo.png"/></a></div>
-</div>
-<div id="stripe"></div>
-<!--wrapper start--><div id="wrapper">
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h1>Thank you!</h1>
-<p class="font_1">Operation successful</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+			<nav id="nav-wrap">         
+				<a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+					<span class="menu-icon">Menu</span>
+				</a>
+				<a class="mobile-btn" href="#" title="Hide navigation">
+					<span class="menu-icon">Menu</span>
+				</a>            
+				<ul id="nav" class="nav">
+					<lic lass="current"><a class="smoothscroll" href="/">Home.</a></li>
+					<li><a class="smoothscroll" href="/#services">Services.</a></li>
+					<li><a class="smoothscroll" href="/#prices">Prices.</a></li>
+					<li><a class="smoothscroll" href="/#examples">Samples.</a></li>
+					<li><a class="smoothscroll" href="/#terms">Terms.</a></li>
+					<li><a class="smoothscroll" href="/#clients">Clients.</a></li>
+					<li><a class="smoothscroll" href="/#contact">Contacts.</a></li>
+				</ul> <!-- end #nav -->
+			</nav> <!-- end #nav-wrap -->
 
-<!--wrapper end--></div>
-<div id="footer">
-    <p class="font_4">&copy 2019 smmastering.by</p><br/>
-	<p class="font_5">Service by:</p>
-	<p class="font_5">individual entrepreneur Dmitriy Nekrasov</p>
-	<p class="font_5">291-32 Aerodromnaya str., Minsk, Belarus 220026</p>
-	<p class="font_5">Reg.No 192778096 from 21.02.2017 issued by</p>
-	<p class="font_5">the Minsk City Executive Committee</p>
-	<p class="font_5">Taxpayer ID 192778096</p>
-	<p class="font_5">Tel.no (+Viber) +375291129746</p>
-	
-	<!-- flag counter start -->
-	<p class="font_5"><br/>
-	<a href="http://s01.flagcounter.com/more/Vu"><img src="https://s01.flagcounter.com/count/Vu/bg_FFFFFF/txt_000000/border_FFFFFF/columns_2/maxflags_6/viewers_3/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-	</p>
-	<!-- flag counter end -->
-	
-	    <div class="bblock_4" align="center">
-		    <ul id="footlogos">
-			    <li><img src="img_sys/paylogos.png"/></li>
-			</ul>
+			<ul class="header-social">
+				<li><a target="_blank" rel="nofollow" href="https://fb.com/sledgermastering"><i class="fa fa-facebook-square"></i></a></li>
+            	<li><a target="_blank" rel="nofollow" href="https://www.youtube.com/@sledgermastering2015"><i class="fa fa-youtube-play"></i></a></li>
+               	<li><a target="_blank" rel="nofollow" href="https://www.soundcloud.com/sledgermastering"><i class="fa fa-soundcloud"></i></a></li>
+               	<li><a target="_blank" rel="nofollow" href="https://www.instagram.com/sledger.music"><i class="fa fa-instagram"></i></a></li>
+			</ul>      
 		</div>
+	</header> <!-- end header -->
 
-		<!--div class="bblock_4" align="center">
-		    <ul id="footlogos">
-			   <li>
-			      <a href="https://metrika.yandex.ru/stat/?id=43439219&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/43439219/3_0_ECFF20FF_CCFF00FF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a><script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script> <script type="text/javascript"> try { var yaCounter43439219 = new Ya.Metrika({ id:43439219, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } </script> <noscript><div><img src="https://mc.yandex.ru/watch/43439219" style="position:absolute; left:-9999px;" alt="" /></div></noscript>    
-			   </li>
-			</ul>
-		</div-->
-</div>
-</div>
-</div>
+	<!-- thankspage header
+	================================================== -->
+	<section id="thanks_page_head" class="parallax_two">	
+		<div class="row hero-content">
+		</div> <!-- end row -->	
+	</section> <!-- end homepage hero -->
+
+	<!-- thanks content
+	================================================== -->
+		<?php
+		if(isset($_GET['payment']) & (isset($_GET['getorder']))) {
+			if ($_GET['payment'] == 'success') { ?>
+					<section id="thanks">
+						<div class="row section-head">
+							<div class="twelve columns">
+								<h1>Thank You<span>!</span></h1>
+								<h3>Your payment was received successful<span>.</span></h3>
+								<hr />
+								<!-- orderMod start -->
+									<?php
+									if(isset($_GET['getorder'])) {
+										$linkToFile = 'https://' . $_SERVER['SERVER_NAME'] . '/uploads/' . $_GET['getorder'] . '.zip';
+										$urlHeaders = @get_headers($linkToFile);
+
+										if(strpos($urlHeaders[0], '200')) { ?>
+											<p>Your order is complete. Now you can 
+											<a id='orderLink' href='<?=$linkToFile;?>'>download your order result here</a>.</p>
+											<p>Download will start automatically in a few seconds.</p>
+										<script>
+										// Downloading order
+											function getOrder(){
+												var orderfile = $.urlParam('getorder');
+												var link = $('#orderLink')[0];
+												var linkEvent = null;
+												if (link != null) {
+													linkEvent = document.createEvent('MouseEvents');
+													linkEvent.initEvent('click', true, true);
+													link.dispatchEvent(linkEvent);
+												}
+
+												if (orderfile) {
+													$.ajax({
+														method: 'POST',
+														url: '/inc/sendEmail.php',
+														data: {
+															'contactName': 'Sledgermastering MailBOT',
+															'contactEmail': 'sledger@ya.ru',
+															'contactSubject': 'Заказ ' + orderfile + '.zip скачан',
+															'contactMessage': 'Заказ ' + orderfile + '.zip скачан'
+														},
+														dataType: 'html'
+													})
+												}
+
+											}
+											setTimeout(getOrder, 2500);
+										</script>
+										<?php } else { ?>
+											<p>Your order is complete. But the archive with result not found.
+												We sent email to administrator, but if you want - you can <a href="/#contacts">contact us</a>.</p>
+												<script>
+												// Error with the achive
+													function getOrderWithError(){
+														var orderfile = $.urlParam('getorder');
+														var link = $('#orderLink')[0];
+														var linkEvent = null;
+														if (link != null) {
+															linkEvent = document.createEvent('MouseEvents');
+															linkEvent.initEvent('click', true, true);
+															link.dispatchEvent(linkEvent);
+														}
+														if (orderfile) {
+															$.ajax({
+																method: 'POST',
+																url: '/inc/sendEmail.php',
+																data: {
+																	'contactName': 'Sledgermastering MailBOT',
+																	'contactEmail': 'sledger@ya.ru',
+																	'contactSubject': 'Попытка скачивания несуществующего заказа.',
+																	'contactMessage': 'Попытка скачивания несуществующего заказа. Запрошен файл: ' + orderfile + '.zip'
+																},
+																dataType: 'html'
+															})
+														}
+													}
+													setTimeout(getOrderWithError, 2500);
+												</script>
+										<?php } ?> 
+									<?php } ?> 
+								<!-- orderMod end -->
+							</div>
+						</div> <!-- end section-head -->
+					</section>
+				<?php } else { ?>
+					<section id="thanks_with_errors">
+						<div class="row section-head">
+							<div class="twelve columns">
+								<h1>Error<span>!</span></h1>
+								<h3>Your payment is not completed<span>.</span></h3>
+								<p>Try again, please.</p>
+								<p>We can check if problem on our side and we are already sent email to administrator, but if you want - you can <a href="/#contacts">contact us</a>.</p>
+								<script>
+									// Error with the achive
+									function getOrderWithPaymentError(){
+										$.ajax({
+												method: 'POST',
+												url: '/inc/sendEmail.php',
+												data: {
+													'contactName': 'Sledgermastering MailBOT',
+													'contactEmail': 'sledger@ya.ru',
+													'contactSubject': 'Неудачная попытка оплаты',
+													'contactMessage': 'Произведена неудачная попытка оплаты. Проверяйте коды ошибок последних оплат'
+												},
+												dataType: 'html'
+										})
+									}
+									setTimeout(getOrderWithPaymentError, 2500);
+								</script>
+								<hr />
+							</div>
+						</div> <!-- end section-head -->
+					</section>
+				<?php }
+			} else { ?>
+				<section id="thanks">
+					<div class="row section-head">
+						<div class="twelve columns">
+							<h1>Error<span>!</span></h1>
+							<h3>Order not found<span>.</span></h3>
+							<hr />
+						</div>
+					</div> <!-- end section-head -->
+				</section>
+		<?php } ?>
+	<!--============================================= -->
+   
+   <!-- Footer
+   ================================================== -->
+   <footer>
+      <div class="row">  
+
+      	<div class="twelve columns content group">
+      		
+			<ul class="social-links">
+               <li><a target="_blank" rel="nofollow" href="https://fb.com/sledgermastering"><i class="fa fa-facebook-square"></i></a></li>
+               <li><a target="_blank" rel="nofollow" href="https://www.youtube.com/@sledgermastering2015"><i class="fa fa-youtube-play"></i></a></li>
+               <li><a target="_blank" rel="nofollow" href="https://www.soundcloud.com/sledgermastering"><i class="fa fa-soundcloud"></i></a></li>
+               <li><a target="_blank" rel="nofollow" href="https://www.instagram.com/sledger.music"><i class="fa fa-instagram"></i></a></li>
+               <li><a rel="nofollow" href="skype:sled-ger?chat"><i class="fa fa-skype"></i></a></li>
+               <li><a rel="nofollow" href="viber://chat/?number=+375291129746"><i class="fa fa-viber"></i></a></li>
+    			<!-- <li><a rel="nofollow" target="_blank" href="https://soundbetter.com/profiles/36407-sledger-music-mastering" title="Sledger profile on SoundsBetter"><img src="img/icons/sb.png" width="32" alt="Sledger Mastering profile on SoundsBetter"></a></li-->
+            </ul>
+
+            <hr />
+
+            <div id="go-top" class="styled_button">
+               <a class="smoothscroll styled_button" title="Back to Top" href="#hero">Back to Top<i class="fa fa-angle-up"></i></a>
+            </div>
+
+            <div class="info">
+               <img src="/images/paylogos.png" style="width: 600px;">
+            </div>  
+
+      	</div>           
+
+         <?php $today = date("Y");?>
+
+         <ul class="copyright">
+         	<li>&copy; Copyright <?=$today?></li> 
+            <li><a title="Sledgermastering" href="/">Sledgermastering.by</a>.</li> 
+         </ul>
+
+      </div> <!-- end row -->
+   </footer> <!-- end footer -->
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/jquery.placeholder.min.js"></script>
+   <script src="js/main_thankspage.js"></script>
+
 </body>
+</html>;
 
-<!-- Mirrored from smmastering.by/prices-eur by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2019 07:15:52 GMT -->
-</html>

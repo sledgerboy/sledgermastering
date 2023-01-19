@@ -1,13 +1,5 @@
-<?require_once 'head.php';
-/*$i = 1;
-echo $i++;
-echo '<br/>';
-echo $i--;
-echo '<br/>';
-echo ++$i;
-echo '<br/>';
-echo --$i;*/
-?>
+<?require_once 'head.php';?>
+
 <body>
 <?require_once 'header.php';?>
 

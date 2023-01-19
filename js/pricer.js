@@ -147,9 +147,9 @@ $(window).load(function() {
         }).fail(function (error) {
         $.ajax({
                 method: 'POST',
-                url: '/v2/inc/sendEmail.php',
+                url: '/inc/sendEmail.php',
                 data: {
-                    'contactName': 'ErrorBOT (sledgermastering.by)',
+                    'contactName': 'Sledgermastering MailBOT',
                     'contactEmail': 'sledger@ya.ru',
                     'contactSubject': 'На сайте возникла ошибка обновления курсов валют',
                     'contactMessage': 'Ajax-функция №1 (EUR) загрузки курсов валют не отработала'
@@ -235,9 +235,9 @@ $(window).load(function() {
         }).fail(function (error) {
             $.ajax({
                     method: 'POST',
-                    url: '/v2/inc/sendEmail.php',
+                    url: '/inc/sendEmail.php',
                     data: {
-                        'contactName': 'ErrorBOT (sledgermastering.by)',
+                        'contactName': 'Sledgermastering MailBOT',
                         'contactEmail': 'sledger@ya.ru',
                         'contactSubject': 'На сайте возникла ошибка обновления курсов валют',
                         'contactMessage': 'Ajax-функция №2 (USD/BYN) загрузки курсов валют не отработала'
