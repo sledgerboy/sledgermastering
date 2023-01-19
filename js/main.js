@@ -109,7 +109,7 @@
 
 		   var active_section;
 
-			active_section = $('section' + this.element.id);
+			active_section = $('section#' + this.element.id);
 
 			if (direction === "up") active_section = active_section.prev();
 
@@ -173,18 +173,26 @@
   	/*----------------------------------------------------*/
   	/* Smooth Scrolling
   	------------------------------------------------------ */
-  	$('.smoothscroll').on('click', function (e) {
+	  $('a[href*=#]').bind("click", function(e) {
 	 	
-	 	e.preventDefault();
+// Get the height of the header
+var headerHeight = $("#main-header").height();
 
-   	var target = this.hash,
-    	$target = $(target);
+// Attach the click event
 
-    	$('html, body').stop().animate({
-       	'scrollTop': $target.offset().top
-      }, 800, 'swing', function () {
-      	window.location.hash = target;
-      });
+    e.preventDefault();
+
+    var target = $(this).attr("href"); //Get the target
+    var scrollToPosition = $(target).offset().top - headerHeight;
+
+    $('html').animate({ 'scrollTop': scrollToPosition }, 600, function(){
+        window.location.hash = "" + target;
+        // This hash change will jump the page to the top of the div with the same id
+        // so we need to force the page to back to the end of the animation
+        $('html').animate({ 'scrollTop': scrollToPosition }, 0);
+    });
+
+    $('body').append("called");
 
   	});  
   

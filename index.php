@@ -51,7 +51,7 @@
 		</div> <!-- end row -->	
 
 		<div id="more">
-			<a class="smoothscroll styled_button" href="#services">Free DEMO<i class="fa fa-angle-down"></i></a>
+			<a class="smoothscroll styled_button" href="#contacts">Free DEMO<i class="fa fa-angle-down"></i></a>
 		</div> 	
 	</section> <!-- end homepage hero -->
 
@@ -287,7 +287,7 @@
 	================================================== -->
 	<section id="prices">
 		<div class="row section-head">
-			<h1>Prices<span>.</span></h1>
+			<h1>Mastering prices<span>.</span></h1>
 			<hr />
 
 			<div class="tab row mobile-no-padding">
@@ -625,6 +625,8 @@
 					</div> 
 			</div>
 
+			<p>Looking for STEM-mastering and mixing prices? <a href="/#contacts">contact us</a>.</p>
+
 		</div>
 	</section>
 
@@ -666,111 +668,16 @@
 						</div>
 					</div>
 
-					<p>More Techno &amp; Hard Techno samples - <a class="btn-grey" rel="nofollow" target="_blank" title="Techno &amp; Hard Techno mastering" href="https://soundcloud.com/sledgermastering/sets/mastering-examples-hard-techno">on our Soundcloud playlist</a>.</p>
-				
-				</div>
-						
-				<div class="examplesblock">
-
-					<h3>Techno / Minimal</h3>
-					<p>We love music, especially Minimalistic and Deep Techno. You can find some examples in these styles:</p>
-
-					<p><strong>Ruvick L - No More</strong><br>
-						Track Result:<span> Released on <a title="View release" target="_blank" href="https://www.beatport.com/track/no-more-original-mix/8569166">Dreizehn Schallplatten</a></span>
-					</p>
-						
-					<div class="ex_players">
-						<div class="max-play">
-							<p>BEFORE:</p>
-							<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/311498697&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-						</div>
-						
-						<div class="max-play">
-							<p>AFTER:</p>
-							<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/311498696&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
-						</div>
-					</div>
-
-					<p>More Tech &amp; Minimal samples - <a class="btn-grey" rel="nofollow" target="_blank" title="Tech / Minimal mastering" href="https://soundcloud.com/sledgermastering/sets/mastering-examples-tech">on our Soundcloud playlist</a>.</p>
-				
 				</div>
 
 				<div class="examplesblock">
-
-					<h3>House / Tech House</h3>
-					<p>One of our favourite style in our mastering life is House Music. You can check out some House/tech samples:</p>
-
-					<p><strong>Leveg - Chlirdrens</strong><br>
-						Track Result:<span> Released on <a title="View release" target="_blank" href="https://www.beatport.com/track/chlirdrens/11842930">Betrieb Records</a></span>
-					</p>
-						
-					<div class="ex_players">
-						<div class="max-play">
-							<p>BEFORE:</p>
-							<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/510402813&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-						</div>
-						
-						<div class="max-play">
-							<p>AFTER:</p>
-							<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/510403020&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-						</div>
-					</div>
-
-					<p>More House / Tech / Melodic House samples - <a class="btn-grey" rel="nofollow" target="_blank" title="House / Tech / Melodic House mastering" href="https://soundcloud.com/sledgermastering/sets/house-mastering">on our Soundcloud playlist</a>.</p>
-
+					<p>More sounds before and after mastering you can find on our soundcloud playlists:</p>
+					<p><a class="btn-grey" rel="nofollow" target="_blank" title="Techno &amp; Hard Techno mastering" href="https://soundcloud.com/sledgermastering/sets/mastering-examples-hard-techno">Techno &amp; Hard Techno</a>.</p>
+					<p><a class="btn-grey" rel="nofollow" target="_blank" title="Tech / Minimal mastering" href="https://soundcloud.com/sledgermastering/sets/mastering-examples-tech">Tech &amp; Minimal</a>.</p>
+					<p><a class="btn-grey" rel="nofollow" target="_blank" title="House / Tech / Melodic House mastering" href="https://soundcloud.com/sledgermastering/sets/house-mastering">House / Tech / Melodic House</a>.</p>
+					<p><a class="btn-grey" rel="nofollow" target="_blank" title="Trance mastering" href="https://soundcloud.com/sledgermastering/sets/mastering-examples-trance">Trance</a>.</p>
+					<p><a class="btn-grey" rel="nofollow" target="_blank" title="Drum'n'bass mastering" href="https://soundcloud.com/sledgermastering/sets/mastering-examples-drumnbass">Drum'n'bass</a>.</p>
 				</div>
-
-				<div class="examplesblock">
-
-					<h3>Trance</h3>
-					<p>Trance is life. We believe on it and recommend to you to trip on a sound demos journey:</p>
-
-					<p><strong>Damian Wasse - #Save The Nature</strong><br>
-						Track Result:<span> Released on <a title="View release" target="_blank" href="https://www.beatport.com/track/save-the-nature/7526326">D.Max Recordings</a></span>
-					</p>
-						
-					<div class="ex_players">
-						<div class="max-play">
-							<p>BEFORE:</p>
-							<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/311498720&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-						</div>
-						
-						<div class="max-play">
-							<p>AFTER:</p>
-							<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/311498719&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-						</div>
-					</div>
-
-					<p>More Trance mastering samples - <a class="btn-grey" rel="nofollow" target="_blank" title="Trance mastering" href="https://soundcloud.com/sledgermastering/sets/mastering-examples-trance">on our Soundcloud playlist</a>.</p>
-
-				</div>
-
-				<div class="examplesblock">
-
-					<h3>Drum'n'Bass</h3>
-					<p>Another segment of our ordinary life - Drum'n'bass.</p>
-
-					<p><strong>Mikerobenics - Julika (Philipp Giebel Remix)</strong><br>
-						Track Result:<span> Released on <a title="View release" target="_blank" href="https://www.beatport.com/track/julika/10922962">BluFin</a></span>
-					</p>
-						
-					<div class="ex_players">
-						<div class="max-play">
-							<p>BEFORE:</p>
-							<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/510403473&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-						</div>
-						
-						<div class="max-play">
-							<p>AFTER:</p>
-							<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/510403647&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-						</div>
-					</div>
-
-					<p>More D'n'b mastering samples - <a class="btn-grey" rel="nofollow" target="_blank" title="Drum'n'bass mastering" href="https://soundcloud.com/sledgermastering/sets/mastering-examples-drumnbass">on our Soundcloud playlist</a>.</p>
-
-				</div>
-    
-			
         
 			</div>
 
@@ -933,9 +840,6 @@
 					   </ul>
 					</div> <!-- end member -->
 
-
-
-
 					<div class="bgrid member">
 						<div class="member-pic">
 							<img src="images/partners/amr.png" alt="Assorted Music Records"/>
@@ -953,20 +857,21 @@
 						  <li><a target="_blank" rel="noindex nofollow" href="https://www.discogs.com/label/1645128-Assorted-Music-Records"><img class="fa" src="/images/ds.png"></a></li>
 					   </ul>
 					</div> <!-- end member -->
+
 				</div> <!-- end team-wrapper -->
 			</div> <!-- end row -->
 
-			<div id="call-to-action">	       
+			<!--div id="call-to-action">	       
 				<div class="row section-ads">
 					<div class="twelve columns">
 						<h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost<span>.</span></a></h2>
 						<p>Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
 						Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
-						<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. --></p>
 						<div class="action"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" >Sign Up Now</a></div>
 				   </div>
-			   </div> <!-- end section-ads -->		         	         
-			</div> <!-- end call-to-action -->	           
+			   </div>	         	         
+			</div--> <!-- end call-to-action -->	   
+
 	</section> <!-- end happy clients section -->  
 	<!--============================================= -->
 
@@ -984,7 +889,7 @@
                 		<p>Highly recommended these service! Great job, nice and smooth!</p>
 		                <div class="testimonial-author">
         	            	<img src="images/avatars/avatar-1.jpg" alt="Sledger mastering feedback">
-            	        	<div class="author-info">Deersky
+            	        	<div class="author-info">Deersky<br/>
                     			<span class="position">The head of Soundteller records</span>
                     		</div>
                   		</div>
@@ -994,7 +899,7 @@
 						<p>Good mastering engineer. Our cooperation lasts about a year. Prior to this mastering was challenging and difficult of due to a number reasons. But with the "SledgerMusic" this has changed dramatically. I do not want to talk about the quality of work, quality as at any the master studios. I want to point out a flexible price policy (label) and individual approach to clients and each separate track ... Thanks guys.</p>
 						<div class="testimonial-author">
 							<img src="images/avatars/avatar-2.jpg" alt="Sledger mastering feedback">
-							<div class="author-info">Marko Schwarzmann
+							<div class="author-info">Marko Schwarzmann<br/>
 								<span>The head Of Dreizehn Schallplatten / Betrieb Records Distribution</span>
 							</div>
 						</div>                        
@@ -1004,7 +909,7 @@
 						<p>Sledger Mastering provides great quality masters at reasonable costs. The Customer Service is awesome - as an artist and label manager I am stoked about the speed customer inquiries are worked on and the extraordinary sound quality these guys are offering. Full support!</p>
 						<div class="testimonial-author">
 							<img src="images/avatars/avatar-3.jpg" alt="Sledger mastering feedback">
-							<div class="author-info">Michael Kotapski
+							<div class="author-info">Michael Kotapski<br/>
 								<span>The head Of Louder Than Famous Label</span>
 							</div>
 						</div>                        
@@ -1014,7 +919,7 @@
 						<p>The first conversation I realized that Sledger is a very responsible man. That makes such a result - high quality of product performed. I will work with that person further!</p>
 						<div class="testimonial-author">
 							<img src="images/avatars/avatar-5.jpg" alt="Sledger mastering feedback">
-							<div class="author-info">Gordey Tsukanov
+							<div class="author-info">Gordey Tsukanov<br/>
 								<span>Artist (J00F | FSOE | Nueva | Perfecto Records)</span>
 							</div>
 						</div>                        
@@ -1024,7 +929,7 @@
 						<p>High quality mastering engineer! Strongly recommend ! Will be back again for sure!</p>
 						<div class="testimonial-author">
 							<img src="images/avatars/avatar-6.jpg" alt="Sledger mastering feedback">
-							<div class="author-info">Evgeny Lebedev
+							<div class="author-info">Evgeny Lebedev<br/>
 								<span>Artist (Coldharbour Recordings | Black Hole Recordings | Sunstate)</span>
 							</div>
 						</div>                        
@@ -1034,7 +939,7 @@
 						<p>Sledger is fast and still offers quality. He is open to all genres and is happy about any challenge (he gets it from Evosonic Records all the time). But the most important thing is its price. Due to the currency differences, it is affordable for us and if that were not the case, Evosonic Records would not exist for a long time. More precisely, the label could never have started. Thanks for that and also thank you, that you always keep up with my humor ;-)</p>
 						<div class="testimonial-author">
 							<img src="images/avatars/avatar-7.jpg" alt="Sledger mastering feedback">
-							<div class="author-info">Chris Maico Schmidt
+							<div class="author-info">Chris Maico Schmidt<br/>
 								<span>The head of Evosonic radio | Evosonic records</span>
 							</div>
 						</div>                        
@@ -1048,7 +953,7 @@
 
    <!-- contact
    ================================================== -->
-   <section id="contact">
+   <section id="contacts">
 		<div class="row section-head">
 			<div class="twelve columns">
 				<h1>Get In Touch With Us<span>.</span></h1>

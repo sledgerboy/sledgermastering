@@ -54,7 +54,7 @@
 					<span class="menu-icon">Menu</span>
 				</a>            
 				<ul id="nav" class="nav">
-					<lic lass="current"><a class="smoothscroll" href="/">Home.</a></li>
+					<li><a class="smoothscroll" href="/">Home.</a></li>
 					<li><a class="smoothscroll" href="/#services">Services.</a></li>
 					<li><a class="smoothscroll" href="/#prices">Prices.</a></li>
 					<li><a class="smoothscroll" href="/#examples">Samples.</a></li>

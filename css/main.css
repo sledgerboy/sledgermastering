@@ -16,7 +16,7 @@
 /*  09. =services
 /*  10. =about
 /*  11. =testimonials
-/*  12. =contact
+/*  12. =contacts
 /*  13. =footer
 /*
 /* =================================================================== */
@@ -2285,12 +2285,12 @@ ul#nav li.current a:after {
 }
 
 #testimonial-slider .testimonial-author {
-	display: block;
-	font: 16px/24px "Ubuntu", sans-serif;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	margin-top: 24px;
-	color: #FFFFFF;
+    display: inline-flex;
+    font: 16px/42px "Ubuntu", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 24px auto;
+    color: #FFFFFF;
 }
 
 #testimonial-slider .testimonial-author img {
@@ -2406,10 +2406,10 @@ ul#nav li.current a:after {
 }
 
 /** 
-/* 12. =contact
+/* 12. =contacts
 /* =================================================================== */
 
-#contact {
+#contacts {
 	background: #12151B;
 	padding-top: 60px;
 	padding-bottom: 140px;
@@ -2417,40 +2417,40 @@ ul#nav li.current a:after {
 	border-bottom: 1px solid #15191d;  
 }
 
-#contact h3 {
+#contacts h3 {
 	font: 18px/36px "Ubuntu", sans-serif;
 	color: #b22222;
 	padding: 0;
 	margin-bottom: 6px;
 }
 
-#contact .left {
+#contacts .left {
 	padding-right: 35px;
 }
 
-#contact .right {
+#contacts .right {
 	padding-left: 35px;
 	position: relative;
 	top: -6px;
 }
 
 /* media queries:  
-/* #contact / .left .right */
+/* #contacts / .left .right */
 
 @media only screen and (max-width:1024px) {
-	#contact .left {
+	#contacts .left {
 		padding-right: 30px;
 	}
 
-	#contact .right {
+	#contacts .right {
 		padding-left: 30px;
 	}
 
 }
 
 @media only screen and (max-width:768px) {
-	#contact .left,
-	#contact .right {
+	#contacts .left,
+	#contacts .right {
 		width: 100%;
 		padding: 0 15px;
 	}
@@ -2459,8 +2459,8 @@ ul#nav li.current a:after {
 }
 
 @media only screen and (max-width:600px) {
-	#contact .left,
-	#contact .right {
+	#contacts .left,
+	#contacts .right {
 		padding: 0 10px;
 	}
 
@@ -2468,34 +2468,34 @@ ul#nav li.current a:after {
 }
 
 @media only screen and (max-width:400px) {
-	#contact .left,
-	#contact .right {
+	#contacts .left,
+	#contacts .right {
 		padding: 0;
 	}
 
 }
 
 /* contact form */
-#contact form {
+#contacts form {
 	margin-top: 12px;
 	margin-bottom: 30px;
 }
 
-#contact form div {
+#contacts form div {
 	position: relative;
 }
 
-#contact form div:before,
-#contact form div:after {
+#contacts form div:before,
+#contacts form div:after {
 	content: "";
 	display: table;
 }
 
-#contact form div:after {
+#contacts form div:after {
 	clear: both;
 }
 
-#contact form div label {
+#contacts form div label {
 	font: 11px/24px "Ubuntu", sans-serif;
 	position: absolute;
 	bottom: 3px;
@@ -2511,13 +2511,13 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="file"],
-#contact textarea,
-#contact select {
+#contacts textarea,
+#contacts select {
 	margin-bottom: 45px;
 	width: 100%;
 }
 
-#contact button.submitform {
+#contacts button.submitform {
 	font: 15px/30px "Ubuntu", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
