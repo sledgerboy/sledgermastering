@@ -122,7 +122,7 @@ echo --$i;*/
 					<div class="bgrid folio-item">
 					<div class="item-wrap">
 						<a href="#modal-01">
-							<img src="images/pexels-14.jpg" alt="Underwater">
+							<img src="images/pexels-14.jpg" alt="Mastering">
 							<div class="overlay"></div>                       
 							<div class="why-us-item-meta">
 								<h5>Mastering - source check list</h5>
@@ -140,7 +140,7 @@ echo --$i;*/
 					<div class="bgrid folio-item">
 					<div class="item-wrap">
 						<a href="#modal-02">
-							<img src="images/pexels-2.jpg" alt="Hotel Sign">
+							<img src="images/pexels-2.jpg" alt="STEM-Mastering">
 							<div class="overlay">
 							<div class="why-us-item-meta">
 									<h5>STEM-Mastering - source check list</h5>
@@ -159,7 +159,7 @@ echo --$i;*/
 					<div class="bgrid folio-item">
 					<div class="item-wrap">
 						<a href="#modal-03">
-							<img src="images/pexels-1.jpg" alt="Beetle">                        
+							<img src="images/pexels-1.jpg" alt="Mixing">                        
 							<div class="overlay">
 							<div class="why-us-item-meta">
 									<h5>Mixing - source check list</h5>
@@ -796,7 +796,7 @@ echo --$i;*/
 
 			<div class="row mobile-no-padding">       	
 		      	<div class="process bgrid-half tab-bgrid-whole group">
-		      		<div class="bgrid bg-black h460">
+		      		<div class="bgrid pw">
 						<h3>How to place order.</h3>
 						<ol>
 							<li>Choose you tariff</li>
@@ -813,7 +813,7 @@ echo --$i;*/
 						</blockquote>
 					</div>
 
-					<div class="bgrid bg-black h460">
+					<div class="bgrid pw">
 						<h3>Payment.</h3>
 						<p>After works, we send you the pdf-invoice with unique private link to "bePaid" special authorization page.
 						The payment is completely confidential and safe: service is protected via the Secure Data Transfer Protocol (SSL),
@@ -826,7 +826,7 @@ echo --$i;*/
 				</div> <!-- end process -->  
 				
 				<div class="process group">
-					<p class="p-shade">Full text of terms and public offer you can download <a href="/pub-offer.pdf">here</a>.</p> 
+					<p class="pw">Full text of terms and public offer you can download <a target="_blank" href="/pub-offer/pub-offer-eng.pdf">here</a>.</p> 
 				</div>
 				
 			</div>
@@ -850,7 +850,7 @@ echo --$i;*/
 					
 					<div class="bgrid member">
 						<div class="member-pic">
-							<img src="images/partners/13.png" alt=""/>
+							<img src="images/partners/13.png" alt="Dreizehn Schallplatten"/>
 					 		<div class="mask"></div>       	
 						</div>
 						<div class="member-name">
@@ -868,7 +868,7 @@ echo --$i;*/
 
 					<div class="bgrid member">
 						<div class="member-pic">
-							<img src="images/partners/btr.png" alt=""/>
+							<img src="images/partners/btr.png" alt="Betrieb Records"/>
 							<div class="mask"></div>  
 					   </div>
 					   <div class="member-name">
@@ -886,7 +886,7 @@ echo --$i;*/
 
 					<div class="bgrid member">
 						<div class="member-pic">
-							<img src="images/partners/evo.png" alt=""/>
+							<img src="images/partners/evo.png" alt="Evosonic"/>
 							<div class="mask"></div>  
 						</div>
 					   <div class="member-name">
@@ -906,7 +906,7 @@ echo --$i;*/
 
 					<div class="bgrid member">
 						<div class="member-pic">
-							<img src="images/partners/ltf.png" alt=""/>
+							<img src="images/partners/ltf.png" alt="Louder Than Famous"/>
 							<div class="mask"></div>                          	
 						</div>
 					   <div class="member-name">
@@ -925,7 +925,7 @@ echo --$i;*/
 
 					<div class="bgrid member">
 						<div class="member-pic">
-							<img src="images/partners/waud.png" alt=""/>
+							<img src="images/partners/waud.png" alt="Waitaudio"/>
 							<div class="mask"></div>  
 						</div>
 						<div class="member-name">
@@ -946,7 +946,7 @@ echo --$i;*/
 
 					<div class="bgrid member">
 						<div class="member-pic">
-							<img src="images/partners/amr.png" alt=""/>
+							<img src="images/partners/amr.png" alt="Assorted Music Records"/>
 							<div class="mask"></div>  
 					   </div>
 					   <div class="member-name">
@@ -991,7 +991,7 @@ echo --$i;*/
                		<li>
                 		<p>Highly recommended these service! Great job, nice and smooth!</p>
 		                <div class="testimonial-author">
-        	            	<img src="images/avatars/avatar-1.jpg" alt="Author image">
+        	            	<img src="images/avatars/avatar-1.jpg" alt="Sledger mastering feedback">
             	        	<div class="author-info">Deersky
                     			<span class="position">The head of Soundteller records</span>
                     		</div>
@@ -1001,7 +1001,7 @@ echo --$i;*/
 					<li>                       
 						<p>Good mastering engineer. Our cooperation lasts about a year. Prior to this mastering was challenging and difficult of due to a number reasons. But with the "SledgerMusic" this has changed dramatically. I do not want to talk about the quality of work, quality as at any the master studios. I want to point out a flexible price policy (label) and individual approach to clients and each separate track ... Thanks guys.</p>
 						<div class="testimonial-author">
-							<img src="images/avatars/avatar-2.jpg" alt="Author image">
+							<img src="images/avatars/avatar-2.jpg" alt="Sledger mastering feedback">
 							<div class="author-info">Marko Schwarzmann
 								<span>The head Of Dreizehn Schallplatten / Betrieb Records Distribution</span>
 							</div>
@@ -1011,7 +1011,7 @@ echo --$i;*/
 					<li>                       
 						<p>Sledger Mastering provides great quality masters at reasonable costs. The Customer Service is awesome - as an artist and label manager I am stoked about the speed customer inquiries are worked on and the extraordinary sound quality these guys are offering. Full support!</p>
 						<div class="testimonial-author">
-							<img src="images/avatars/avatar-3.jpg" alt="Author image">
+							<img src="images/avatars/avatar-3.jpg" alt="Sledger mastering feedback">
 							<div class="author-info">Michael Kotapski
 								<span>The head Of Louder Than Famous Label</span>
 							</div>
@@ -1021,7 +1021,7 @@ echo --$i;*/
 					<li>                       
 						<p>The first conversation I realized that Sledger is a very responsible man. That makes such a result - high quality of product performed. I will work with that person further!</p>
 						<div class="testimonial-author">
-							<img src="images/avatars/avatar-5.jpg" alt="Author image">
+							<img src="images/avatars/avatar-5.jpg" alt="Sledger mastering feedback">
 							<div class="author-info">Gordey Tsukanov
 								<span>Artist (J00F | FSOE | Nueva | Perfecto Records)</span>
 							</div>
@@ -1031,7 +1031,7 @@ echo --$i;*/
 					<li>                       
 						<p>High quality mastering engineer! Strongly recommend ! Will be back again for sure!</p>
 						<div class="testimonial-author">
-							<img src="images/avatars/avatar-6.jpg" alt="Author image">
+							<img src="images/avatars/avatar-6.jpg" alt="Sledger mastering feedback">
 							<div class="author-info">Evgeny Lebedev
 								<span>Artist (Coldharbour Recordings | Black Hole Recordings | Sunstate)</span>
 							</div>
@@ -1041,7 +1041,7 @@ echo --$i;*/
 					<li>                       
 						<p>Sledger is fast and still offers quality. He is open to all genres and is happy about any challenge (he gets it from Evosonic Records all the time). But the most important thing is its price. Due to the currency differences, it is affordable for us and if that were not the case, Evosonic Records would not exist for a long time. More precisely, the label could never have started. Thanks for that and also thank you, that you always keep up with my humor ;-)</p>
 						<div class="testimonial-author">
-							<img src="images/avatars/avatar-7.jpg" alt="Author image">
+							<img src="images/avatars/avatar-7.jpg" alt="Sledger mastering feedback">
 							<div class="author-info">Chris Maico Schmidt
 								<span>The head of Evosonic radio | Evosonic records</span>
 							</div>

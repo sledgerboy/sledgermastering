@@ -68,7 +68,7 @@
    <script src="js/jquery.placeholder.min.js"></script>
    <script src="js/jquery.magnific-popup.min.js"></script>  
    <script src="js/main.js"></script>
-   <script src="js/pricer.js"></script>
+   <script src="js/pricer.js?v=<?=time();?>"></script>
    <script>
    /*---------------------------------------------------- */
 	/* Prices tabs
