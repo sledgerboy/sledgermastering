@@ -28,11 +28,11 @@ if($_POST) {
 
 
    // Set Message
-   $message .= "Email from: " . $name . "<br />";
+	$message .= "Email from: " . $name . "<br />";
 	$message .= "Email address: " . $email . "<br />";
-   $message .= "Message: <br />";
-   $message .= $contact_message;
-   $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
+	$message .= "Message: <br />";
+	$message .= $contact_message;
+	$message .= "<br /> ----- <br /> This email was generated from sledgermastering.by [MailBOT]. <br />";
 
    // Set From: header
    $from =  $name . " <" . $email . ">";
