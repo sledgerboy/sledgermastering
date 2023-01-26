@@ -2823,3 +2823,13 @@ footer .social-links li:first-child {
 .color-o {
 	color: #e64e04!important;
 }
+
+#notFound {
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform:translateY(-50%) translateX(-50%) scale(1.2);
+	width:80%;
+	height:auto;
+	
+  }

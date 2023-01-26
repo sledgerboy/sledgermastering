@@ -21,14 +21,14 @@
 
 	<!-- CSS
 	================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/vendor.min.css">
-	<link rel="stylesheet" href="css/main.css?v=<?=time();?>">     
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/css/vendor.min.css">
+	<link rel="stylesheet" href="/css/main.css?v=<?=time();?>">     
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 
 	<!-- script
 	================================================== -->
-	<script src="js/modernizr.js"></script>
+	<script src="/js/modernizr.js"></script>
 
 	<!-- favicons
 	================================================== -->

@@ -1,7 +1,7 @@
-<?require_once 'head.php';?>
+<?php require_once 'head.php';?>
 
 <body>
-<?require_once 'header.php';?>
+<?php require_once 'header.php';?>
 
 	<!-- homepage hero
 	================================================== -->
@@ -1038,7 +1038,7 @@
    </section>  <!-- end contact -->
    
 
-<?require_once 'footer.php';?>
+<?php require_once 'footer.php';?>
 
 </body>
 
