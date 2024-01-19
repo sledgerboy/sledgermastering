@@ -319,7 +319,8 @@
 							</ul>
 						</div>
 
-						<div class="bgrid">
+						<div class="bgrid promote">
+							<div class="ribbon-wrapper"><div class="price-ribbon ribbon-green">Popular</div></div>
 							<h3 class="pricing-plan-title">Basic</h3>
 							<div class="pricing-plan-price">
 								<!-- script 2 input-->
@@ -334,8 +335,7 @@
 							</ul>
 						</div>
 						
-						<div class="bgrid promote">
-							<div class="ribbon-wrapper"><div class="price-ribbon ribbon-green">Popular</div></div>
+						<div class="bgrid">
 							<h3 class="pricing-plan-title">Standart</h3>
 							<div class="pricing-plan-price">
 								<!-- script 3 input-->
@@ -383,7 +383,8 @@
 							</ul>
 						</div>
 
-						<div class="bgrid">
+						<div class="bgrid promote">
+							<div class="ribbon-wrapper"><div class="price-ribbon ribbon-green">Popular</div></div>
 							<h3 class="pricing-plan-title">Basic</h3>
 							<div class="pricing-plan-price">
 								<!-- script 2 input-->
@@ -398,8 +399,7 @@
 							</ul>
 						</div>
 						
-						<div class="bgrid promote">
-							<div class="ribbon-wrapper"><div class="price-ribbon ribbon-green">Popular</div></div>
+						<div class="bgrid">
 							<h3 class="pricing-plan-title">Standart</h3>
 							<div class="pricing-plan-price">
 								<!-- script 3 input-->
@@ -447,7 +447,8 @@
 							</ul>
 						</div>
 
-						<div class="bgrid">
+						<div class="bgrid promote">
+						<div class="ribbon-wrapper"><div class="price-ribbon ribbon-green">Popular</div></div>
 							<h3 class="pricing-plan-title">Basic</h3>
 							<div class="pricing-plan-price">
 								<!-- script 2 input-->
@@ -462,8 +463,7 @@
 							</ul>
 						</div>
 						
-						<div class="bgrid promote">
-							<div class="ribbon-wrapper"><div class="price-ribbon ribbon-green">Popular</div></div>
+						<div class="bgrid">
 							<h3 class="pricing-plan-title">Standart</h3>
 							<div class="pricing-plan-price">
 								<!-- script 3 input-->

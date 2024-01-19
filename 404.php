@@ -124,7 +124,7 @@ function positionParticles() {
 
 function positionText() {
     var canvas = document.createElement("canvas");
-    canvas.width = 400; 
+    canvas.width = 400;
     canvas.height = 120;
     var context = canvas.getContext("2d");
     context.fillStyle = "#b22222";

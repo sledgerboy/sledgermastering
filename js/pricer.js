@@ -2,11 +2,6 @@ $(window).load(function() {
 
     // Basic (calcucate starts in euro)
     window.base = 14;
-    //let eurRate = 1
-
-  
-  // где угодно в коде
-
 
     $.ajax({
     method: 'GET',
@@ -24,16 +19,16 @@ $(window).load(function() {
         
 
         // Set label prices (eur)
-        var for_labels_eur_light = Math.ceil(window.base*16);
+        var for_labels_eur_light = Math.ceil(window.base*18);
         $('#for_labels_eur_light').text('');
         $('#for_labels_eur_light').append(for_labels_eur_light);
         var for_labels_eur_basic = Math.ceil(window.base*19);
         $('#for_labels_eur_basic').text('');
         $('#for_labels_eur_basic').append(for_labels_eur_basic);
-        var for_labels_eur_standart = Math.ceil(window.base*22);
+        var for_labels_eur_standart = Math.ceil(window.base*20);
         $('#for_labels_eur_standart').text('');
         $('#for_labels_eur_standart').append(for_labels_eur_standart);
-        var for_labels_eur_premium = Math.ceil(window.base*25);
+        var for_labels_eur_premium = Math.ceil(window.base*21);
         $('#for_labels_eur_premium').text('');
         $('#for_labels_eur_premium').append(for_labels_eur_premium);
         
@@ -83,10 +78,10 @@ $(window).load(function() {
             // Calculate label prices (byn)
             window.baseByn = Math.ceil(window.base * window.eurRate);
             console.log('BYN tariff today is: ' + window.baseByn);
-            var for_labels_byn_light = Math.ceil(window.baseByn*16);
+            var for_labels_byn_light = Math.ceil(window.baseByn*18);
             var for_labels_byn_basic = Math.ceil(window.baseByn*19);
-            var for_labels_byn_standart = Math.ceil(window.baseByn*22);
-            var for_labels_byn_premium = Math.ceil(window.baseByn*25);
+            var for_labels_byn_standart = Math.ceil(window.baseByn*20);
+            var for_labels_byn_premium = Math.ceil(window.baseByn*21);
 
             // Set label prices (byn)
             $('#for_labels_byn_light').text('');
@@ -163,21 +158,21 @@ $(window).load(function() {
 
             // Get currency (usd)
             //alert(window.base); // 14
-            //alert(window.baseByn); // 41
+            //alert(window.baseByn); // 46
             window.usdRate = JSON.parse(data.Cur_OfficialRate)
             console.log('USD currency today is: ' + window.usdRate);
 			
             // Set label prices (usd)
-            var for_labels_usd_light = Math.ceil((window.baseByn/usdRate)*15.3);
+            var for_labels_usd_light = Math.ceil((window.baseByn/usdRate)*18);
             $('#for_labels_usd_light').text('');
             $('#for_labels_usd_light').append(for_labels_usd_light);
-            var for_labels_usd_basic = Math.ceil((window.baseByn/usdRate)*18.3);
+            var for_labels_usd_basic = Math.ceil((window.baseByn/usdRate)*19);
             $('#for_labels_usd_basic').text('');
             $('#for_labels_usd_basic').append(for_labels_usd_basic);
-            var for_labels_usd_standart = Math.ceil((window.baseByn/usdRate)*21.3);
+            var for_labels_usd_standart = Math.ceil((window.baseByn/usdRate)*20);
             $('#for_labels_usd_standart').text('');
             $('#for_labels_usd_standart').append(for_labels_usd_standart);
-            var for_labels_usd_premium = Math.ceil((window.baseByn/usdRate)*24.3);
+            var for_labels_usd_premium = Math.ceil((window.baseByn/usdRate)*21);
             $('#for_labels_usd_premium').text('');
             $('#for_labels_usd_premium').append(for_labels_usd_premium);
 

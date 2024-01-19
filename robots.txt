@@ -1,12 +1,13 @@
 User-agent: *
 
 Disallow: /.idea*
+Disallow: /.git*
+Disallow: /.well-known*
 Disallow: /.vscode*
 Disallow: /cgi-bin*
 Disallow: /css*
 Disallow: /inc*
 Disallow: /js*
-Disallow: /partners*
 Disallow: /pub-offer*
 Disallow: /uploads*
 Disallow: /thankyou*

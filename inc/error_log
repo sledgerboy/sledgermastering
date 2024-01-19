@@ -1,0 +1,2 @@
+[18-Jan-2024 23:57:23 Europe/Minsk] PHP Warning:  Undefined variable $message in /home/sledgerm/public_html/inc/sendEmail.php on line 31
+[18-Jan-2024 23:57:23 Europe/Minsk] PHP Warning:  Undefined variable $error in /home/sledgerm/public_html/inc/sendEmail.php on line 47
