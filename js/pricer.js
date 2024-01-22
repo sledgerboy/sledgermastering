@@ -1,7 +1,7 @@
 $(window).load(function() {
 
     // Basic (calcucate starts in euro)
-    window.base = 14;
+    window.base = 15;
 
     $.ajax({
     method: 'GET',
@@ -14,9 +14,6 @@ $(window).load(function() {
         window.eurRate = JSON.parse(data.Cur_OfficialRate)
         console.log('EURO currency today is: ' + window.eurRate);
 		
-
-
-        
 
         // Set label prices (eur)
         var for_labels_eur_light = Math.ceil(window.base*18);

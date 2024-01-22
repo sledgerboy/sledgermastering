@@ -12,4 +12,4 @@ Disallow: /pub-offer*
 Disallow: /uploads*
 Disallow: /thankyou*
 
-Sitemap: https://sledgermastering.by/sitemap.xml
+Sitemap: https://sledgermastering.pro/sitemap.xml

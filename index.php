@@ -51,7 +51,7 @@
 		</div> <!-- end row -->	
 
 		<div id="more">
-			<a class="smoothscroll styled_button" href="#contacts">Free DEMO<i class="fa fa-angle-down"></i></a>
+			<a class="smoothscroll styled_button" href="#contact">Free DEMO<i class="fa fa-angle-down"></i></a>
 		</div> 	
 	</section> <!-- end homepage hero -->
 
@@ -725,7 +725,8 @@
 				</div> <!-- end process -->  
 				
 				<div class="process group">
-					<p class="pw">Full text of terms and public offer you can download <a target="_blank" href="/pub-offer/pub-offer-eng.pdf">here</a>.</p> 
+					<p class="pw">Full text of terms and public offer you can download <a target="_blank" href="/pub-offer/pub-offer-eng.pdf">here</a>.</p>
+					<p class="pw">Acception/List of <a target="_blank" href="/pub-offer/Personal_data_ENG.pdf">processing personal data</a>.</p>
 				</div>
 				
 			</div>
@@ -953,7 +954,7 @@
 
    <!-- contact
    ================================================== -->
-   <section id="contacts">
+   <section id="contact">
 		<div class="row section-head">
 			<div class="twelve columns">
 				<h1>Get In Touch With Us<span>.</span></h1>
@@ -975,13 +976,13 @@
 						<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required />
 					</div>
 					<div>
-							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject"  value="" />
+						<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject"  value="" />
 					</div>                       
 					<div>
-							<textarea name="contactMessage"  id="contactMessage" placeholder="message" rows="10" cols="50" ></textarea>
+						<textarea name="contactMessage"  id="contactMessage" placeholder="message" rows="10"></textarea>
 					</div> 
 					<div>
-						<button class="submitform">Submit</button>
+						<button class="submitform smoothscroll styled_button">Submit</button>
 						<div id="submit-loader">
 							<div class="text-loader">Sending...</div>                             
 							<div class="s-loader">
@@ -1008,7 +1009,7 @@
 
 				<h3 class="address">Official</h3>
 				<p class="lead">
-					<span>Individual entrepreneur: Dmitriy Nekrasov</span>
+					<span>Individual entrepreneur: Nekrasov Dmitriy Yuryevich</span>
 					<span>Reg.No: 192778096 from 29.01.2018</span>
 					<span>issued by the Minsk City Executive Committee</span>
 					<span>Taxpayer ID: 192778096</span>
@@ -1030,7 +1031,7 @@
 					<span>Skype: <a rel="nofollow" href="skype:sled-ger?chat">Start Skype chat</a></span>
 					<span>Viber: <a rel="nofollow" title="Viber" href="viber://chat/?number=+375291129746">Start Viber chat</a></span>
 					<span>Phone: (375) 29 112 97 46</span>
-					<span>Email: <a href="mailto:info@sledgermastering.by">info@sledgermastering.by</a></span>
+					<span>Email: <a href="mailto:info@sledgermastering.pro">info@sledgermastering.pro</a></span>
 				</p>
 					
 			</div>     	

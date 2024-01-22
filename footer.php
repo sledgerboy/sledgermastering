@@ -24,7 +24,7 @@
 
 
             <div class="info">
-               <img src="/images/paylogos.png" style="width: 600px;">
+               <img src="/images/paylogos.png" style="">
                <!--img src="/images/footer/yandex-pay-logo-footer.png" style="width: 15px;">
                <img src="/images/footer/pci-dss.svg" style="width: 36px;">
                <img src="/images/footer/mc-id.svg" style="width: 65px;">
@@ -43,7 +43,7 @@
 
          <ul class="copyright">
          	<li>&copy; Copyright <?=$today?></li> 
-            <li><a title="Sledgermastering" href="/">Sledgermastering.by</a>.</li> 
+            <li><a title="Sledgermastering" href="/">Sledgermastering.pro</a>.</li>
          	
          </ul>
 

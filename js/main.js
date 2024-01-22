@@ -192,7 +192,7 @@ var headerHeight = $("#main-header").height();
         $('html').animate({ 'scrollTop': scrollToPosition }, 0);
     });
 
-    $('body').append("called");
+    $('body').append("");
 
   	});  
   

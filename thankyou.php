@@ -238,7 +238,7 @@
 
          <ul class="copyright">
          	<li>&copy; Copyright <?=$today?></li> 
-            <li><a title="Sledgermastering" href="/">Sledgermastering.by</a>.</li> 
+            <li><a title="Sledgermastering" href="/">Sledgermastering.pro</a>.</li>
          </ul>
 
       </div> <!-- end row -->
