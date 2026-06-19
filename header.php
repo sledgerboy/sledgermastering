@@ -1,39 +1,33 @@
-<?php
-
-?>
-
-<!-- header
-	================================================== -->
-	<header id="main-header">
-
-		<div class="row">
-			<div class="logo">
-				<a href="/">Sledger Mastering</a>
-			</div>
-
-			<nav id="nav-wrap">         
-				<a class="mobile-btn" href="#nav-wrap" title="Show navigation">
-					<span class="menu-icon">Menu</span>
-				</a>
-				<a class="mobile-btn" href="#" title="Hide navigation">
-					<span class="menu-icon">Menu</span>
-				</a>            
-				<ul id="nav" class="nav">
-					<li class="current"><a class="smoothscroll" href="#hero">Home.</a></li>
-					<li><a class="smoothscroll" href="#services">Services.</a></li>
-					<li><a class="smoothscroll" href="#prices">Prices.</a></li>
-					<li><a class="smoothscroll" href="#examples">Samples.</a></li>
-					<li><a class="smoothscroll" href="#terms">Terms.</a></li>
-					<li><a class="smoothscroll" href="#clients">Clients.</a></li>
-					<li><a class="smoothscroll" href="#contact">Contacts.</a></li>
-				</ul> <!-- end #nav -->
-			</nav> <!-- end #nav-wrap -->
-
-			<ul class="header-social">
-				<li><a target="_blank" rel="nofollow" href="https://fb.com/sledgermastering"><i class="fa fa-facebook-square"></i></a></li>
-            	<li><a target="_blank" rel="nofollow" href="https://www.youtube.com/@sledgermastering2015"><i class="fa fa-youtube-play"></i></a></li>
-               	<li><a target="_blank" rel="nofollow" href="https://www.soundcloud.com/sledgermastering"><i class="fa fa-soundcloud"></i></a></li>
-               	<li><a target="_blank" rel="nofollow" href="https://www.instagram.com/sledger.music"><i class="fa fa-instagram"></i></a></li>
-			</ul>      
+<header class="site-header" id="main-header">
+	<div class="container">
+		<div class="logo">
+			<a href="/">Sledger <span>Mastering</span></a>
 		</div>
-	</header> <!-- end header -->
+
+		<button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+			<i class="fa fa-bars"></i>
+		</button>
+
+		<div class="site-nav-wrap" id="site-nav-wrap">
+			<ul class="site-nav" id="nav">
+				<li class="current"><a href="#hero">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#prices">Prices</a></li>
+				<li><a href="#examples">Samples</a></li>
+				<li><a href="#terms">Terms</a></li>
+				<li><a href="#clients">Clients</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+
+		<div class="header-actions">
+			<ul class="header-social">
+				<li><a target="_blank" rel="nofollow" href="https://fb.com/sledgermastering" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+				<li><a target="_blank" rel="nofollow" href="https://www.youtube.com/@sledgermastering2015" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a></li>
+				<li><a target="_blank" rel="nofollow" href="https://www.soundcloud.com/sledgermastering" aria-label="SoundCloud"><i class="fa fa-soundcloud"></i></a></li>
+				<li><a target="_blank" rel="nofollow" href="https://www.instagram.com/sledger.music" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+			<a href="#contact" class="btn btn-primary btn-sm">Free Demo</a>
+		</div>
+	</div>
+</header>

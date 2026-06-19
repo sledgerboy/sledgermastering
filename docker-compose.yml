@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  # PHP 8 с Apache
+  php:
+    image: php:8.2-apache
+    container_name: SMSite
+    ports:
+      - "9099:80"
+    volumes:
+      - .:/var/www/html  # монтируем текущую папку (корень проекта)
+      - ./php.ini:/usr/local/etc/php/conf.d/custom.ini
+    depends_on:
+      - mysql
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=app_user
+      - MYSQL_PASSWORD=app_password
+      - MYSQL_DATABASE=app_database
+    networks:
+      - app-network
+
+  # MySQL
+  mysql:
+    image: mysql:8.0
+    container_name: SMDb
+    ports:
+      - "3303:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: app_database
+      MYSQL_USER: app_user
+      MYSQL_PASSWORD: app_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - app-network
+    command: --default-authentication-plugin=mysql_native_password
+
+volumes:
+  mysql_data:
+
+networks:
+  app-network:
+    driver: bridge

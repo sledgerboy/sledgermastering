@@ -1,278 +1,172 @@
-/*---------------------------------------------------------------------------------
-/*
-/* Main JS
-/*
------------------------------------------------------------------------------------*/  
+(function ($) {
+	'use strict';
 
-(function($) {
+	/* Header scroll state */
+	var header = document.getElementById('main-header');
+	function onScroll() {
+		if (window.scrollY > 40) {
+			header.classList.add('scrolled');
+		} else {
+			header.classList.remove('scrolled');
+		}
+	}
+	window.addEventListener('scroll', onScroll, { passive: true });
+	onScroll();
 
-	"use strict";
+	/* Mobile nav */
+	var navToggle = document.getElementById('nav-toggle');
+	var navWrap = document.getElementById('site-nav-wrap');
 
-	/*---------------------------------------------------- */
-	/* Preloader
-	------------------------------------------------------ */ 
-   $(window).load(function() {
+	if (navToggle && navWrap) {
+		navToggle.addEventListener('click', function () {
+			var open = navWrap.classList.toggle('open');
+			navToggle.setAttribute('aria-expanded', open);
+			navToggle.innerHTML = open ? '<i class="fa fa-times"></i>' : '<i class="fa fa-bars"></i>';
+		});
 
-      // will first fade out the loading animation 
-    	$("#loader").fadeOut("slow", function(){
+		navWrap.querySelectorAll('a').forEach(function (link) {
+			link.addEventListener('click', function () {
+				navWrap.classList.remove('open');
+				navToggle.setAttribute('aria-expanded', 'false');
+				navToggle.innerHTML = '<i class="fa fa-bars"></i>';
+			});
+		});
+	}
 
-        // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
+	/* Smooth scroll */
+	$(document).on('click', 'a[href*="#"]', function (e) {
+		var href = this.getAttribute('href');
+		if (!href || href === '#') return;
 
-      });       
+		var hash = href.indexOf('#') !== -1 ? href.substring(href.indexOf('#')) : href;
+		if (hash.length <= 1) return;
 
-  	})
+		var target = $(hash);
+		if (!target.length) return;
 
+		e.preventDefault();
+		var offset = header ? header.offsetHeight : 0;
+		$('html, body').animate({ scrollTop: target.offset().top - offset }, 600);
+	});
 
-  	/*----------------------------------------------------*/
-  	/* Flexslider
-  	/*----------------------------------------------------*/
-  	$(window).load(function() {
+	/* Active nav on scroll */
+	var sections = $('section[id]');
+	var navLinks = $('#nav a');
 
-	  	$('#hero-slider').flexslider({
-	   	namespace: "flex-",
-	      controlsContainer: ".hero-container",
-	      animation: 'fade',
-	      controlNav: true,
-	      directionNav: false,
-	      smoothHeight: false,
-	      slideshowSpeed: 8000,
-	      animationSpeed: 450,
-	      randomize: false,
-	      before: function(slider){
-			   $(slider).find(".animated").each(function(){
-			   	$(this).removeAttr("class");
-			  	});			  	
-			},
-			start: function(slider){
-			   $(slider).find(".flex-active-slide")
-			           	.find("h1").addClass("animated fadeInDown show")
-			           	.next().addClass("animated fadeInUp show");
-			           		
-			   $(window).trigger('resize');		  			 
-			},
-			after: function(slider){
-			 	$(slider).find(".flex-active-slide")
-			           	.find("h1").addClass("animated fadeInDown show")
-			           	.next().addClass("animated fadeInUp show");			  
+	function setActiveNav() {
+		var scrollPos = $(window).scrollTop() + (header ? header.offsetHeight : 0) + 80;
+		var current = '';
+
+		sections.each(function () {
+			var top = $(this).offset().top;
+			var bottom = top + $(this).outerHeight();
+			if (scrollPos >= top && scrollPos < bottom) {
+				current = this.id;
 			}
-	   });
+		});
 
-	   $('#testimonial-slider').flexslider({
-	   	namespace: "flex-",
-	      controlsContainer: "",
-	      animation: 'slide',
-	      controlNav: true,
-	      directionNav: false,
-	      smoothHeight: false,
-	      slideshowSpeed: 8000,
-	      animationSpeed: 800,
-	      randomize: true,
-	   });
+		navLinks.parent().removeClass('current');
+		if (current) {
+			navLinks.filter('[href="#' + current + '"]').parent().addClass('current');
+		}
+	}
 
-   });
+	$(window).on('scroll', setActiveNav);
+	setActiveNav();
 
+	/* Waveform bars */
+	var waveform = document.getElementById('waveform');
+	if (waveform) {
+		for (var i = 0; i < 48; i++) {
+			var bar = document.createElement('div');
+			bar.className = 'waveform-bar';
+			bar.style.height = (20 + Math.random() * 80) + '%';
+			bar.style.animationDelay = (Math.random() * 1.2) + 's';
+			bar.style.animationDuration = (0.8 + Math.random() * 0.8) + 's';
+			waveform.appendChild(bar);
+		}
+	}
 
-   /*----------------------------------------------------*/
-	/* Adjust Primary Navigation Background Opacity
-	------------------------------------------------------*/
-   $(window).on('scroll', function() {
+	/* Testimonials slider */
+	var track = document.getElementById('testimonial-track');
+	var dots = document.querySelectorAll('.testimonial-dot');
+	var currentSlide = 0;
+	var slideCount = dots.length;
+	var autoplayTimer;
 
-		var h = $('header').height();
-		var y = $(window).scrollTop();
-      var header = $('#main-header');
+	function goToSlide(index) {
+		if (!track || !slideCount) return;
+		currentSlide = (index + slideCount) % slideCount;
+		track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+		dots.forEach(function (dot, i) {
+			dot.classList.toggle('active', i === currentSlide);
+		});
+	}
 
-	   if ((y > h + 30 ) && ($(window).outerWidth() > 768 ) ) {
-	      header.addClass('opaque');	      
-	   }
-      else {
-         if (y < h + 30) {
-            header.removeClass('opaque');
-         }
-         else {
-            header.addClass('opaque');
-         }
-      }
+	function startAutoplay() {
+		autoplayTimer = setInterval(function () {
+			goToSlide(currentSlide + 1);
+		}, 8000);
+	}
 
+	if (track && slideCount) {
+		dots.forEach(function (dot, i) {
+			dot.addEventListener('click', function () {
+				clearInterval(autoplayTimer);
+				goToSlide(i);
+				startAutoplay();
+			});
+		});
+		startAutoplay();
+	}
+
+	/* Service modals */
+	$('.service-card-link').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		removalDelay: 300,
+		showCloseBtn: false,
+		mainClass: 'mfp-fade'
 	});
 
-
-   /*----------------------------------------------------*/
-  	/* Highlight the current section in the navigation bar
-  	------------------------------------------------------*/
-	var sections = $("section"),
-	navigation_links = $("#nav-wrap a");	
-
-	sections.waypoint( {
-
-       handler: function(direction) {
-
-		   var active_section;
-
-			active_section = $('section#' + this.element.id);
-
-			if (direction === "up") active_section = active_section.prev();
-
-			var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');			
-
-         navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
-
-		}, 
-
-		offset: '25%'
-
+	$(document).on('click', '.popup-modal-dismiss', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
 	});
 
-
-   /*----------------------------------------------------*/
-  	/* FitText Settings
-  	------------------------------------------------------ */
-  	setTimeout(function() {
-
-   	$('#hero-slider h1').fitText(1, { minFontSize: '30px', maxFontSize: '49px' });
-
-  	}, 100);
-
-
-  	/*-----------------------------------------------------*/
-  	/* Mobile Menu
-   ------------------------------------------------------ */  
-   var menu_icon = $("<span class='menu-icon'>Menu</span>");
-  	var toggle_button = $("<a>", {                         
-                        id: "toggle-btn", 
-                        html : "",
-                        title: "Menu",
-                        href : "#" } 
-                        );
-  	var nav_wrap = $('nav#nav-wrap')
-  	var nav = $("ul#nav");  
-   
-   /* if JS is enabled, remove the two a.mobile-btns 
-  	and dynamically prepend a.toggle-btn to #nav-wrap */
-  	nav_wrap.find('a.mobile-btn').remove(); 
-  	toggle_button.append(menu_icon); 
-   nav_wrap.prepend(toggle_button); 
-
-  	toggle_button.on("click", function(e) {
-   	e.preventDefault();
-    	nav.slideToggle("fast");     
-  	});
-
-  	if (toggle_button.is(':visible')) nav.addClass('mobile');
-  	$(window).resize(function() {
-   	if (toggle_button.is(':visible')) nav.addClass('mobile');
-    	else nav.removeClass('mobile');
-  	});
-
-  	$('ul#nav li a').on("click", function() {      
-   	if (nav.hasClass('mobile')) nav.fadeOut('fast');      
-  	});
-
-
-  	/*----------------------------------------------------*/
-  	/* Smooth Scrolling
-  	------------------------------------------------------ */
-	  $('a[href*=#]').bind("click", function(e) {
-	 	
-// Get the height of the header
-var headerHeight = $("#main-header").height();
-
-// Attach the click event
-
-    e.preventDefault();
-
-    var target = $(this).attr("href"); //Get the target
-    var scrollToPosition = $(target).offset().top - headerHeight;
-
-    $('html').animate({ 'scrollTop': scrollToPosition }, 600, function(){
-        window.location.hash = "" + target;
-        // This hash change will jump the page to the top of the div with the same id
-        // so we need to force the page to back to the end of the animation
-        $('html').animate({ 'scrollTop': scrollToPosition }, 0);
-    });
-
-    $('body').append("");
-
-  	});  
-  
-
-   /*----------------------------------------------------*/
-	/*	Modal Popup
-	------------------------------------------------------*/
-    $('.item-wrap a').magnificPopup({
-
-       type:'inline',
-       fixedContentPos: false,
-       removalDelay: 300,
-       showCloseBtn: false,
-       mainClass: 'mfp-fade'
-
-    });
-
-    $(document).on('click', '.popup-modal-dismiss', function (e) {
-    		e.preventDefault();
-    		$.magnificPopup.close();
-    });
-
-
-   /*----------------------------------------------------*/
-	/*  Placeholder Plugin Settings
-	------------------------------------------------------ */  	 
-	$('input, textarea').placeholder()  
-
-   
-	/*----------------------------------------------------*/
-	/*	contact form
-	------------------------------------------------------*/
-
-	/* local validation */
+	/* Contact form */
 	$('#contactForm').validate({
-
-		/* submit via ajax */
-		submitHandler: function(form) {
-
+		rules: {
+			contactName: { required: true, minlength: 2 },
+			contactEmail: { required: true, email: true },
+			contactMessage: { required: true, minlength: 10 }
+		},
+		submitHandler: function (form) {
 			var sLoader = $('#submit-loader');
 
-			$.ajax({      	
-
-		      type: "POST",
-		      url: "inc/sendEmail.php",
-		      data: $(form).serialize(),
-		      beforeSend: function() { 
-
-		      	sLoader.fadeIn(); 
-
-		      },
-		      success: function(msg) {
-
-	            // Message was sent
-	            if (msg == 'OK') {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').hide();
-	               $('#contactForm').fadeOut();
-	               $('#message-success').fadeIn();   
-	            }
-	            // There was an error
-	            else {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
-	            }
-
-		      },
-		      error: function() {
-
-		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
-
-		      }
-
-	      });     		
-  		}
-
+			$.ajax({
+				type: 'POST',
+				url: 'inc/sendEmail.php',
+				data: $(form).serialize(),
+				beforeSend: function () {
+					sLoader.fadeIn();
+				},
+				success: function (msg) {
+					sLoader.fadeOut();
+					if (msg === 'OK') {
+						$('#message-warning').hide();
+						$('#contactForm').fadeOut();
+						$('#message-success').fadeIn();
+					} else {
+						$('#message-warning').html(msg).fadeIn();
+					}
+				},
+				error: function () {
+					sLoader.fadeOut();
+					$('#message-warning').html('Something went wrong. Please try again.').fadeIn();
+				}
+			});
+		}
 	});
-	
 
 })(jQuery);

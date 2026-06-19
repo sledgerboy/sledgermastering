@@ -1,244 +1,138 @@
-$(window).load(function() {
+(function ($) {
+	'use strict';
 
-    // Basic (calcucate starts in euro)
-    window.base = 15;
+	var BASE = 20;
+	var FALLBACK = { eurToByn: 3.65, usdToByn: 3.25 };
+	var rates = { eur: null, byn: null, usd: null };
 
-    $.ajax({
-    method: 'GET',
-    url: 'https://www.nbrb.by/api/exrates/rates/eur?parammode=2',
-    data: {
-    },
-        }).done(function (data) {
+	var LABEL = { starter: 18, pro: 20, unlimited: 22 };
+	var ARTIST = { epOff: 4, albumOff: 6, vinylMul: 1.5 };
 
-        // Get currency (eur)
-        window.eurRate = JSON.parse(data.Cur_OfficialRate)
-        console.log('EURO currency today is: ' + window.eurRate);
-		
+	function parseOfficialRate(raw) {
+		if (raw === undefined || raw === null) return NaN;
+		if (typeof raw === 'number') return raw;
+		if (typeof raw === 'string') {
+			try {
+				var parsed = JSON.parse(raw);
+				if (typeof parsed === 'number' && isFinite(parsed)) return parsed;
+			} catch (e) { /* ignore */ }
+			return parseFloat(raw.replace(',', '.'));
+		}
+		return NaN;
+	}
 
-        // Set label prices (eur)
-        var for_labels_eur_light = Math.ceil(window.base*18);
-        $('#for_labels_eur_light').text('');
-        $('#for_labels_eur_light').append(for_labels_eur_light);
-        var for_labels_eur_basic = Math.ceil(window.base*19);
-        $('#for_labels_eur_basic').text('');
-        $('#for_labels_eur_basic').append(for_labels_eur_basic);
-        var for_labels_eur_standart = Math.ceil(window.base*20);
-        $('#for_labels_eur_standart').text('');
-        $('#for_labels_eur_standart').append(for_labels_eur_standart);
-        var for_labels_eur_premium = Math.ceil(window.base*21);
-        $('#for_labels_eur_premium').text('');
-        $('#for_labels_eur_premium').append(for_labels_eur_premium);
-        
+	function getRateFromResponse(data) {
+		var payload = typeof data === 'string' ? JSON.parse(data) : data;
+		return parseOfficialRate(payload && payload.Cur_OfficialRate);
+	}
 
-        // Set prices (eur) - Artists - Standart table
-        $('#for_artists_eur_basic').text('');
-        $('#for_artists_eur_basic').append(window.base);
-        var for_artists_eur_basic1 = Math.ceil(window.base - 1);
-        $('#for_artists_eur_basic-1').append(for_artists_eur_basic1);
-        var for_artists_eur_basic2 = Math.ceil(window.base - 2);
-        $('#for_artists_eur_basic-2').append(for_artists_eur_basic2);
-        var for_artists_eur_basic3 = Math.ceil(window.base - 3);
-        $('#for_artists_eur_basic-3').append(for_artists_eur_basic3);
-        var for_artists_eur_basic4 = Math.ceil(window.base - 4);
-        $('#for_artists_eur_basic-4').append(for_artists_eur_basic4);
-        var for_artists_eur_basic5 = Math.ceil(window.base - 5);
-        $('#for_artists_eur_basic-5').append(for_artists_eur_basic5);
-        var for_artists_eur_basic6 = Math.ceil(window.base - 6);
-        $('#for_artists_eur_basic-6').append(for_artists_eur_basic6);
-        var for_artists_eur_basic7 = Math.ceil(window.base - 7);
-        $('#for_artists_eur_basic-7').append(for_artists_eur_basic7);
-        var for_artists_eur_basic_s = Math.ceil((window.base - 7)/2);
-        $('#for_artists_eur_basic-s').append(for_artists_eur_basic_s);
+	function setPrice(id, value) {
+		var num = Number(value);
+		if (!isFinite(num)) return false;
+		var el = document.getElementById(id);
+		if (!el) {
+			console.warn('[pricer] not found:', id);
+			return false;
+		}
+		el.textContent = String(num);
+		if (el.getAttribute('itemprop') === 'price') {
+			el.setAttribute('content', String(num));
+		}
+		return true;
+	}
 
-        // Set prices (eur) - Artists - Vinyl/Tape table
-        var for_artists_eur_tape = Math.ceil(window.base+(window.base/100*50));
-        $('#for_artists_eur_tape').text('');
-        $('#for_artists_eur_tape').append(for_artists_eur_tape);
-        var for_artists_eur_tape1 = Math.ceil(for_artists_eur_tape - 1);
-        $('#for_artists_eur_tape-1').append(for_artists_eur_tape1);
-        var for_artists_eur_tape2 = Math.ceil(for_artists_eur_tape - 2);
-        $('#for_artists_eur_tape-2').append(for_artists_eur_tape2);
-        var for_artists_eur_tape3 = Math.ceil(for_artists_eur_tape - 3);
-        $('#for_artists_eur_tape-3').append(for_artists_eur_tape3);
-        var for_artists_eur_tape4 = Math.ceil(for_artists_eur_tape - 4);
-        $('#for_artists_eur_tape-4').append(for_artists_eur_tape4);
-        var for_artists_eur_tape5 = Math.ceil(for_artists_eur_tape - 5);
-        $('#for_artists_eur_tape-5').append(for_artists_eur_tape5);
-        var for_artists_eur_tape6 = Math.ceil(for_artists_eur_tape - 6);
-        $('#for_artists_eur_tape-6').append(for_artists_eur_tape6);
-        var for_artists_eur_tape7 = Math.ceil(for_artists_eur_tape - 7);
-        $('#for_artists_eur_tape-7').append(for_artists_eur_tape7);
-        var for_artists_eur_tape_s = Math.ceil((for_artists_eur_tape - 7)/2);
-        $('#for_artists_eur_tape-s').append(for_artists_eur_tape_s);
+	function setLabelPrices(cur, unit) {
+		setPrice('for_labels_' + cur + '_starter', Math.ceil(unit * LABEL.starter));
+		setPrice('for_labels_' + cur + '_pro', Math.ceil(unit * LABEL.pro));
+		setPrice('for_labels_' + cur + '_unlimited', Math.ceil(unit * LABEL.unlimited));
+	}
 
+	function setArtistPrices(cur, base) {
+		var b = Number(base);
+		if (!isFinite(b)) return;
 
-            // Calculate label prices (byn)
-            window.baseByn = Math.ceil(window.base * window.eurRate);
-            console.log('BYN tariff today is: ' + window.baseByn);
-            var for_labels_byn_light = Math.ceil(window.baseByn*18);
-            var for_labels_byn_basic = Math.ceil(window.baseByn*19);
-            var for_labels_byn_standart = Math.ceil(window.baseByn*20);
-            var for_labels_byn_premium = Math.ceil(window.baseByn*21);
+		setPrice('for_artists_' + cur + '_single', b);
+		setPrice('for_artists_' + cur + '_ep', Math.ceil(b - ARTIST.epOff));
+		setPrice('for_artists_' + cur + '_album', Math.ceil(b - ARTIST.albumOff));
+		setPrice('for_artists_' + cur + '_vinyl', Math.ceil(b * ARTIST.vinylMul));
+		setPrice('for_artists_' + cur + '_revision', Math.ceil((b - 7) / 2));
+	}
 
-            // Set label prices (byn)
-            $('#for_labels_byn_light').text('');
-            $('#for_labels_byn_light').append(for_labels_byn_light);
-            $('#for_labels_byn_basic').text('');
-            $('#for_labels_byn_basic').append(for_labels_byn_basic);
-            $('#for_labels_byn_standart').text('');
-            $('#for_labels_byn_standart').append(for_labels_byn_standart);
-            $('#for_labels_byn_premium').text('');
-            $('#for_labels_byn_premium').append(for_labels_byn_premium);
+	function applyEur() {
+		setLabelPrices('eur', BASE);
+		setArtistPrices('eur', BASE);
+	}
 
-            // Set prices (byn) - Artists - Standart table
-            $('#for_artists_byn_basic').text('');
-            $('#for_artists_byn_basic').append(window.baseByn);
-            var for_artists_byn_basic1 = Math.ceil(window.baseByn - 1);
-            $('#for_artists_byn_basic-1').append(for_artists_byn_basic1);
-            var for_artists_byn_basic2 = Math.ceil(window.baseByn - 2);
-            $('#for_artists_byn_basic-2').append(for_artists_byn_basic2);
-            var for_artists_byn_basic3 = Math.ceil(window.baseByn - 3);
-            $('#for_artists_byn_basic-3').append(for_artists_byn_basic3);
-            var for_artists_byn_basic4 = Math.ceil(window.baseByn - 4);
-            $('#for_artists_byn_basic-4').append(for_artists_byn_basic4);
-            var for_artists_byn_basic5 = Math.ceil(window.baseByn - 5);
-            $('#for_artists_byn_basic-5').append(for_artists_byn_basic5);
-            var for_artists_byn_basic6 = Math.ceil(window.baseByn - 6);
-            $('#for_artists_byn_basic-6').append(for_artists_byn_basic6);
-            var for_artists_byn_basic7 = Math.ceil(window.baseByn - 7);
-            $('#for_artists_byn_basic-7').append(for_artists_byn_basic7);
-            var for_artists_byn_basic_s = Math.ceil((window.baseByn - 7)/2);
-            $('#for_artists_byn_basic-s').append(for_artists_byn_basic_s);
+	function applyByn() {
+		if (!isFinite(rates.byn)) return;
+		setLabelPrices('byn', rates.byn);
+		setArtistPrices('byn', rates.byn);
+	}
 
-            // Set prices (byn) - Artists - Vinyl/Tape table
-            var for_artists_byn_tape = Math.ceil(window.baseByn + (window.baseByn/100*50));
-            $('#for_artists_byn_tape').text('');
-            $('#for_artists_byn_tape').append(for_artists_byn_tape);
-            var for_artists_byn_tape1 = Math.ceil(for_artists_byn_tape - 1);
-            $('#for_artists_byn_tape-1').append(for_artists_byn_tape1);
-            var for_artists_byn_tape2 = Math.ceil(for_artists_byn_tape - 2);
-            $('#for_artists_byn_tape-2').append(for_artists_byn_tape2);
-            var for_artists_byn_tape3 = Math.ceil(for_artists_byn_tape - 3);
-            $('#for_artists_byn_tape-3').append(for_artists_byn_tape3);
-            var for_artists_byn_tape4 = Math.ceil(for_artists_byn_tape - 4);
-            $('#for_artists_byn_tape-4').append(for_artists_byn_tape4);
-            var for_artists_byn_tape5 = Math.ceil(for_artists_byn_tape - 5);
-            $('#for_artists_byn_tape-5').append(for_artists_byn_tape5);
-            var for_artists_byn_tape6 = Math.ceil(for_artists_byn_tape - 6);
-            $('#for_artists_byn_tape-6').append(for_artists_byn_tape6);
-            var for_artists_byn_tape7 = Math.ceil(for_artists_byn_tape - 7);
-            $('#for_artists_byn_tape-7').append(for_artists_byn_tape7);
-            var for_artists_byn_tape_s = Math.ceil((for_artists_byn_tape - 7)/2);
-            $('#for_artists_byn_tape-s').append(for_artists_byn_tape_s);
-            //location.reload();
-        
-        }).fail(function (error) {
-            $.ajax({
-                method: 'POST',
-                url: '/inc/sendEmail.php',
-                data: {
-                    'contactName': 'Sledgermastering MailBOT',
-                    'contactEmail': 'sledger@ya.ru',
-                    'contactSubject': 'На сайте возникла ошибка обновления курсов валют',
-                    'contactMessage': 'Ajax-функция №1 (EUR) загрузки курсов валют не отработала'
-                },
-                dataType: 'html'
-        })
-    });
+	function applyUsd() {
+		if (!isFinite(rates.byn) || !isFinite(rates.usd)) return;
+		var unit = Math.ceil(rates.byn / rates.usd);
+		var ratio = rates.byn / rates.usd;
+		setPrice('for_labels_usd_starter', Math.ceil(ratio * LABEL.starter));
+		setPrice('for_labels_usd_pro', Math.ceil(ratio * LABEL.pro));
+		setPrice('for_labels_usd_unlimited', Math.ceil(ratio * LABEL.unlimited));
+		setArtistPrices('usd', unit);
+	}
 
-    $.ajax({
-        method: 'GET',
-        url: 'https://www.nbrb.by/api/exrates/rates/usd?parammode=2',
-        data: {
-        },
-        }).done(function (data) {
+	function applyAll() {
+		applyEur();
+		applyByn();
+		applyUsd();
+	}
 
-            // Get currency (usd)
-            //alert(window.base); // 14
-            //alert(window.baseByn); // 46
-            window.usdRate = JSON.parse(data.Cur_OfficialRate)
-            console.log('USD currency today is: ' + window.usdRate);
-			
-            // Set label prices (usd)
-            var for_labels_usd_light = Math.ceil((window.baseByn/usdRate)*18);
-            $('#for_labels_usd_light').text('');
-            $('#for_labels_usd_light').append(for_labels_usd_light);
-            var for_labels_usd_basic = Math.ceil((window.baseByn/usdRate)*19);
-            $('#for_labels_usd_basic').text('');
-            $('#for_labels_usd_basic').append(for_labels_usd_basic);
-            var for_labels_usd_standart = Math.ceil((window.baseByn/usdRate)*20);
-            $('#for_labels_usd_standart').text('');
-            $('#for_labels_usd_standart').append(for_labels_usd_standart);
-            var for_labels_usd_premium = Math.ceil((window.baseByn/usdRate)*21);
-            $('#for_labels_usd_premium').text('');
-            $('#for_labels_usd_premium').append(for_labels_usd_premium);
+	function fetchRate(currency, ok, err) {
+		$.ajax({
+			method: 'GET',
+			url: 'https://www.nbrb.by/api/exrates/rates/' + currency + '?parammode=2',
+			dataType: 'json',
+			cache: false,
+			timeout: 15000,
+			success: function (data) {
+				var rate = getRateFromResponse(data);
+				if (!isFinite(rate)) {
+					err('Invalid rate: ' + currency);
+					return;
+				}
+				ok(rate);
+			},
+			error: function () {
+				err('Request failed: ' + currency);
+			}
+		});
+	}
 
-            // Calculate prices (usd) - Artists - Standart table
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            // Set prices (usd) - Artists - Standart table
-            var for_artists_usd_basic = Math.ceil(window.baseByn/usdRate);
-            $('#for_artists_usd_basic').text('');
-            var for_artists_usd_basic1 = Math.ceil(for_artists_usd_basic - 1);
-            $('#for_artists_usd_basic').append(for_artists_usd_basic);
-            $('#for_artists_usd_basic-1').append(for_artists_usd_basic1);
-            var for_artists_usd_basic2 = Math.ceil(for_artists_usd_basic - 2);
-            $('#for_artists_usd_basic-2').append(for_artists_usd_basic2);
-            var for_artists_usd_basic3 = Math.ceil(for_artists_usd_basic - 3);
-            $('#for_artists_usd_basic-3').append(for_artists_usd_basic3);
-            var for_artists_usd_basic4 = Math.ceil(for_artists_usd_basic - 4);
-            $('#for_artists_usd_basic-4').append(for_artists_usd_basic4);
-            var for_artists_usd_basic5 = Math.ceil(for_artists_usd_basic - 5);
-            $('#for_artists_usd_basic-5').append(for_artists_usd_basic5);
-            var for_artists_usd_basic6 = Math.ceil(for_artists_usd_basic - 6);
-            $('#for_artists_usd_basic-6').append(for_artists_usd_basic6);
-            var for_artists_usd_basic7 = Math.ceil(for_artists_usd_basic - 7);
-            $('#for_artists_usd_basic-7').append(for_artists_usd_basic7);
-            var for_artists_usd_basic_s = Math.ceil((for_artists_usd_basic - 7)/2);
-            $('#for_artists_usd_basic-s').append(for_artists_usd_basic_s);
+	function updateAll() {
+		applyEur();
+		rates.byn = Math.ceil(BASE * FALLBACK.eurToByn);
+		rates.usd = FALLBACK.usdToByn;
+		applyByn();
+		applyUsd();
 
-            // Set prices (usd) - Artists - Vinyl/Tape table
-            var for_artists_usd_tape = Math.ceil(for_artists_usd_basic+(for_artists_usd_basic/100*50));
-            $('#for_artists_usd_tape').text('');
-            $('#for_artists_usd_tape').append(for_artists_usd_tape);
-            var for_artists_usd_tape1 = Math.ceil(for_artists_usd_tape - 1);
-            $('#for_artists_usd_tape-1').append(for_artists_usd_tape1);
-            var for_artists_usd_tape2 = Math.ceil(for_artists_usd_tape - 2);
-            $('#for_artists_usd_tape-2').append(for_artists_usd_tape2);
-            var for_artists_usd_tape3 = Math.ceil(for_artists_usd_tape - 3);
-            $('#for_artists_usd_tape-3').append(for_artists_usd_tape3);
-            var for_artists_usd_tape4 = Math.ceil(for_artists_usd_tape - 4);
-            $('#for_artists_usd_tape-4').append(for_artists_usd_tape4);
-            var for_artists_usd_tape5 = Math.ceil(for_artists_usd_tape - 5);
-            $('#for_artists_usd_tape-5').append(for_artists_usd_tape5);
-            var for_artists_usd_tape6 = Math.ceil(for_artists_usd_tape - 6);
-            $('#for_artists_usd_tape-6').append(for_artists_usd_tape6);
-            var for_artists_usd_tape7 = Math.ceil(for_artists_usd_tape - 7);
-            $('#for_artists_usd_tape-7').append(for_artists_usd_tape7);
-            var for_artists_usd_tape_s = Math.ceil((for_artists_usd_tape - 7)/2);
-            $('#for_artists_usd_tape-s').append(for_artists_usd_tape_s);
-            
+		fetchRate('eur', function (eurRate) {
+			rates.eur = eurRate;
+			rates.byn = Math.ceil(BASE * eurRate);
+			applyByn();
 
-        }).fail(function (error) {
-            $.ajax({
-                    method: 'POST',
-                    url: '/inc/sendEmail.php',
-                    data: {
-                        'contactName': 'Sledgermastering MailBOT',
-                        'contactEmail': 'sledger@ya.ru',
-                        'contactSubject': 'На сайте возникла ошибка обновления курсов валют',
-                        'contactMessage': 'Ajax-функция №2 (USD/BYN) загрузки курсов валют не отработала'
-                    },
-                    dataType: 'html'
-            })
-    });
-    console.log('All prices are updated successfully');
-})
+			fetchRate('usd', function (usdRate) {
+				rates.usd = usdRate;
+				applyUsd();
+				$(document).trigger('pricesUpdated');
+			}, function (e) {
+				console.error('[pricer]', e);
+			});
+		}, function (e) {
+			console.error('[pricer]', e);
+		});
+	}
+
+	window.SledgerPricer = { refresh: applyAll, update: updateAll };
+
+	$(function () { updateAll(); });
+	$(document).on('tabChanged', applyAll);
+
+})(jQuery);
