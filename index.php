@@ -232,6 +232,8 @@
 			<div class="terms-card">
 				<h3>Payment</h3>
 				<p>We send a PDF invoice with a private link to the bePaid authorization page. Payment is SSL-protected, verified by Visa and MasterCard Secure Code. Visa, MasterCard, GPay accepted.</p>
+				<p>Card payments are processed through the <a href="https://bepaid.by/kak-oplatit" target="_blank" rel="noopener noreferrer">bePaid</a> electronic payment system. The bePaid payment page meets all data transmission security requirements (PCI DSS Level 1). All confidential data is stored in encrypted form and is highly resistant to unauthorized access. Access to authorization pages is provided using a protocol that ensures secure data transmission over the Internet (SSL/TLS).</p>
+				<p lang="ru">Платежи по банковским картам осуществляются через систему электронных платежей <a href="https://bepaid.by/kak-oplatit" target="_blank" rel="noopener noreferrer">bePaid</a>. Платежная страница bePaid отвечает всем требованиям безопасности передачи данных (PCI DSS Level 1). Все конфиденциальные данные хранятся в зашифрованном виде и максимально устойчивы к взлому. Доступ к авторизационным страницам осуществляется с использованием протокола, обеспечивающего безопасную передачу данных в Интернете (SSL/TLS).</p>
 				<blockquote>Prices are calculated per National Bank of Belarus exchange rates. Payments are processed in BYN; your card is debited in your local currency.</blockquote>
 			</div>
 		</div>

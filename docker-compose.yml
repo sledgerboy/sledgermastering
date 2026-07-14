@@ -3,13 +3,12 @@ version: '3.8'
 services:
   # PHP 8 с Apache
   php:
-    image: php:8.2-apache
+    build: .
     container_name: SMSite
     ports:
       - "9099:80"
     volumes:
       - .:/var/www/html  # монтируем текущую папку (корень проекта)
-      - ./php.ini:/usr/local/etc/php/conf.d/custom.ini
     depends_on:
       - mysql
     environment:

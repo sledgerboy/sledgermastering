@@ -164,6 +164,12 @@ a:hover { color: var(--accent-hover); }
 	justify-content: space-between;
 	height: 100%;
 	gap: 24px;
+	flex-wrap: nowrap;
+}
+
+.logo {
+	flex-shrink: 1;
+	min-width: 0;
 }
 
 .logo a {
@@ -172,6 +178,7 @@ a:hover { color: var(--accent-hover); }
 	font-weight: 600;
 	color: #fff;
 	letter-spacing: -0.02em;
+	white-space: nowrap;
 }
 
 .logo a span { color: var(--accent); }
@@ -202,6 +209,21 @@ a:hover { color: var(--accent-hover); }
 	display: flex;
 	align-items: center;
 	gap: 16px;
+}
+
+.header-tools {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-shrink: 0;
+}
+
+.header-cta__short {
+	display: none;
+}
+
+.header-cta {
+	white-space: nowrap;
 }
 
 .header-social {
@@ -848,6 +870,16 @@ a:hover { color: var(--accent-hover); }
 
 .terms-card ol li { margin-bottom: 8px; }
 
+.terms-card p {
+	color: var(--text-muted);
+	font-size: 14px;
+	line-height: 1.65;
+}
+
+.terms-card p + p {
+	margin-top: 12px;
+}
+
 .terms-card blockquote {
 	margin-top: 16px;
 	padding: 16px;
@@ -896,7 +928,7 @@ a:hover { color: var(--accent-hover); }
 	margin: 0 auto 16px;
 	border-radius: 12px;
 	overflow: hidden;
-	background: #fff;
+	/*background: #fff;*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1360,7 +1392,7 @@ a:hover { color: var(--accent-hover); }
 	.pricing-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 	.nav-toggle { display: flex; align-items: center; justify-content: center; }
 
 	.site-nav-wrap {
@@ -1375,6 +1407,7 @@ a:hover { color: var(--accent-hover); }
 		opacity: 0;
 		pointer-events: none;
 		transition: transform var(--transition), opacity var(--transition);
+		z-index: 999;
 	}
 
 	.site-nav-wrap.open {
@@ -1394,6 +1427,43 @@ a:hover { color: var(--accent-hover); }
 	}
 
 	.header-social { display: none; }
+}
+
+@media (max-width: 768px) {
+	:root {
+		--header-h: 64px;
+	}
+
+	.container {
+		padding: 0 16px;
+	}
+
+	.site-header .container {
+		gap: 10px;
+	}
+
+	.logo a {
+		font-size: 0.95rem;
+	}
+
+	.header-tools {
+		gap: 8px;
+	}
+
+	.header-actions {
+		gap: 0;
+	}
+
+	.header-actions .btn-sm {
+		padding: 8px 12px;
+		font-size: 12px;
+	}
+
+	.nav-toggle {
+		width: 40px;
+		height: 40px;
+		font-size: 18px;
+	}
 
 	.section { padding: 72px 0; }
 
@@ -1411,4 +1481,9 @@ a:hover { color: var(--accent-hover); }
 	}
 
 	.hero-stats { flex-wrap: wrap; gap: 24px; }
+}
+
+@media (max-width: 400px) {
+	.header-cta__full { display: none; }
+	.header-cta__short { display: inline; }
 }
